@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="35B22B48-AC27-D365-E7AA-C24BBA119981" name="InformeReservaAuto">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:39:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_39</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="13031CE8-79B4-A4D5-5BAF-BB5638A53FB7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:40:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="12623589-6147-0A35-2034-41B0D43C3648">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:40:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaInforme" id="19142E4A-1F0D-E44F-0F9E-B2178B732FBC">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:47:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_estadoReservaAuto" id="AED049A3-B5CB-1F67-FA5D-771298CD1CA8">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:41:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77899E82-9D5C-B501-2007-D66C1B2E3E17" referredColumn="D5F7F0F5-3181-2575-2902-DC09367AAA20"/>
+</associations>
+</Column>
+<Column name="codigo_reservaAuto" id="54C4F5BA-8ADB-CCA9-CD9F-702516221616">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:05:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DCFE976-8A6A-2617-491C-F824A6913A6C" referredColumn="E1B3525B-4D75-7A64-BC5A-65736658FB86"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA998D51-80A9-19AD-EF4D-486A0FA1FD1A" name="InformeReservaAuto_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:40:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13031CE8-79B4-A4D5-5BAF-BB5638A53FB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2B37669-BCC9-DE66-7A40-581600606AD9" name="InformeReservaAuto__IDX">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:05:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54C4F5BA-8ADB-CCA9-CD9F-702516221616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F63A6A26-73E2-7008-DCD2-DDBE3F201CE1" name="InformeReservaAuto_EstadoReservaAuto_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:41:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AED049A3-B5CB-1F67-FA5D-771298CD1CA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8447EEF-7AEC-8282-F37E-AF2DF6FF637C" name="InformeReservaAuto_ReservaAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:05:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54C4F5BA-8ADB-CCA9-CD9F-702516221616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD177318-C43E-D253-6B2D-88145FB543ED" name="DetalleReservaHospedaje">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 03:18:01 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="11539B72-2A04-DFD3-859D-5010DDA82151">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:11:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_fr" id="23F6BD02-E751-169C-00EF-AE595FCB1132">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:39:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30B47759-6450-6B28-86D2-466F40337A7C" referredColumn="3A27F6C9-E22F-666E-6394-74C2272BED70"/>
+</associations>
+</Column>
+<Column name="codigo_regimen" id="A879180F-F8BC-692C-871D-91B752974605">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:22:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B83CBBFE-9FCC-9013-4844-6EC245C1664A" referredColumn="D152CF36-6EFB-B6F6-3CD2-B571D99B1407"/>
+</associations>
+</Column>
+<Column name="fechaChekcIn" id="E8CBDE4A-FBA8-5E4E-7420-B49EB00B4474">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:16:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaCheckOut" id="36610DB1-E719-D5E2-EE85-BC1257F106BC">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:16:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precioNoche" id="0B526F8D-458A-185E-BC8A-29BE018CE1D7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:24:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prcIncremento" id="194D19CB-6018-C019-FD52-B60049A1610D">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:25:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subTotal" id="F532E23B-9921-BA40-1DEA-155C6B9B799E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:24:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_hotel" id="75F20574-88B5-42B3-2DFA-90E55D6630FB">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:54:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8E95337-C4B7-DDA6-38E1-D24875F782C6" referredColumn="A360FD68-8E74-4858-E98D-71AB70C1D1BA"/>
+</associations>
+</Column>
+<Column name="codigo_habitacion" id="D388CA02-8636-3056-A9FB-E9AC22B8AB2C">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:54:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8E95337-C4B7-DDA6-38E1-D24875F782C6" referredColumn="6FD51AB4-4B9E-AB67-213E-C87780772F6B"/>
+</associations>
+</Column>
+<Column name="codigo_estadoReserva" id="257E8C63-2085-41A6-4654-0A4439B777DE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 01:27:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA23F779-5CDC-E301-C6A0-FFCFB70BC889" referredColumn="CF1F73D4-6EBC-DF86-7945-0D2C70E9AAAA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01080A22-3340-6BA1-9DB6-9FF503B92788" name="ReservaHotel_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:11:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11539B72-2A04-DFD3-859D-5010DDA82151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="502B4334-C7D4-2B27-88DE-5AEEA0A0621E" name="ReservaH_RegHospedaje_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:22:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A879180F-F8BC-692C-871D-91B752974605"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38FA4106-A2BF-2839-26AA-11AB1CC2099A" name="ReservaH_FV_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:39:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23F6BD02-E751-169C-00EF-AE595FCB1132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85EF4C8F-7173-FAFD-2F38-AAD47CB334B8" name="ReservaHotel_Habitacion_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:54:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75F20574-88B5-42B3-2DFA-90E55D6630FB"/>
+<colUsage columnID="D388CA02-8636-3056-A9FB-E9AC22B8AB2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D86681ED-D8F2-CD7B-9D66-8E6DE256C6A9" name="DetalleReservaHospedaje_EstadoReservaHospedaje_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 01:27:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="257E8C63-2085-41A6-4654-0A4439B777DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75A589EA-35DB-4E4D-8129-EBD969B98B81" name="TipoPaquete">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 03:40:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_38</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="0EF662F8-CE13-84AE-6511-645F6475047F">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:32:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="3E5224F9-2308-8A8F-BEF9-8F1FC620198F">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:32:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="70755E4F-20B8-655A-75D2-9E31900A01A5">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:32:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E6F3861-10A0-8633-30F9-8BD595214DEA" name="TipoPaquete_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:32:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EF662F8-CE13-84AE-6511-645F6475047F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

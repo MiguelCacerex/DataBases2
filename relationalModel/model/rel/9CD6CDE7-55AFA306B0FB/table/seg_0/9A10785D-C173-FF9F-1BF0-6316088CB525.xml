@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A10785D-C173-FF9F-1BF0-6316088CB525" name="InformeReservaHospedaje">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:58:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="4D251E48-1F05-BB3C-C0B0-450EF538BAA3">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:59:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="27A6FCE9-8F68-19E6-51A5-440AB3DBB13A">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 02:59:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaInforme" id="57F2B4E4-0CB6-248E-AAA5-00DBA2B10ADF">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:00:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EstadoReservaHospedaje_codigo" id="A510EF29-7945-2D60-3540-7EAFB2A60EDE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:00:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E18DA956-632A-8D71-B0C7-98755AA9265D" referredColumn="CF1F73D4-6EBC-DF86-7945-0D2C70E9AAAA"/>
+</associations>
+</Column>
+<Column name="codigo_detalleReserva" id="4C1610A8-C96D-6EA6-90C6-85B7ECDE5333">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:06:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F20AEF89-BCCE-82BC-7523-B60DBB3B5CEE" referredColumn="11539B72-2A04-DFD3-859D-5010DDA82151"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05A95146-AA18-D43F-F5EA-A8D85F9BE189" name="InformeReservaHospedaje_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:00:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D251E48-1F05-BB3C-C0B0-450EF538BAA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6DB9FB9-EEA2-67F6-4E67-4A02231356E5" name="InformeReservaHospedaje__IDX">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:06:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C1610A8-C96D-6EA6-90C6-85B7ECDE5333"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C25AAFA-3775-1F67-E550-5C67875BF8B5" name="InformeReservaHospedaje_EstadoReservaHospedaje_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:00:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A510EF29-7945-2D60-3540-7EAFB2A60EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CF52261-CC24-780E-0907-31339726565E" name="InformeReservaHospedaje_DetalleReservaHospedaje_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:06:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C1610A8-C96D-6EA6-90C6-85B7ECDE5333"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

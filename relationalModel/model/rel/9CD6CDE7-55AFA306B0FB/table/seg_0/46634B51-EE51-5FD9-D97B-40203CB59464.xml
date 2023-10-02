@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46634B51-EE51-5FD9-D97B-40203CB59464" name="FacturaReservaPaqueteTuristico">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 03:20:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="DDD1ED3A-90B6-7442-A7D3-8B8581B668E2">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaVenta" id="45D5B752-4460-4FCF-5458-C824FA032EBB">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="montoTotal" id="329EBE9B-A727-919C-EA1E-1638E8F6D63E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cedula_cliente" id="66C96333-3AF0-22F8-AD2F-E3A39D98D482">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 15:46:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C7B7B7C-BF2F-6B40-39B0-1A6C67F62ABD" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1832B530-48EA-9460-F0EB-B7E5C9A99001" name="FacturaVentaPaqueteTuristico_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDD1ED3A-90B6-7442-A7D3-8B8581B668E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="281B5B75-18D6-211F-2A26-3766517511FC" name="FacturaVentaPaqueteTuristico_Cliente_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 15:46:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66C96333-3AF0-22F8-AD2F-E3A39D98D482"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

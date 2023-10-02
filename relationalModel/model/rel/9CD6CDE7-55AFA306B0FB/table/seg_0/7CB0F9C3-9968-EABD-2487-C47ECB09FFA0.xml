@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CB0F9C3-9968-EABD-2487-C47ECB09FFA0" name="FacturaVentaArticulo">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 03:11:01 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="62002D0D-E8FB-3FCE-8850-CD82DDFF00A1">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:25:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cedula_cliente" id="81937510-AE25-018B-8DD6-71F516AAFBE4">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:21:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="473212BB-08C1-C926-3F04-2343465F6B74" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
+</associations>
+</Column>
+<Column name="fechaVenta" id="EB0BE6B5-A179-4088-CD03-0C674A361FD2">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:25:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="montoTotal" id="3BDFE390-D279-AB51-4621-105CCBA822BA">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:25:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0785EBF-89D6-B61E-B1EB-FE761742FA3F" name="FacturaVentaArticulo_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:25:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62002D0D-E8FB-3FCE-8850-CD82DDFF00A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2F3FAF6-76DD-455B-4823-D380C30D24B8" name="FacturaVentaArticulo_Cliente_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:21:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81937510-AE25-018B-8DD6-71F516AAFBE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

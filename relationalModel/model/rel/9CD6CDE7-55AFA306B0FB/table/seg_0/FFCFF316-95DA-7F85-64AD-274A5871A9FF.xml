@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFCFF316-95DA-7F85-64AD-274A5871A9FF" name="RegimenHospedaje">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:59:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="D152CF36-6EFB-B6F6-3CD2-B571D99B1407">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:20:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F9DBD6E7-4DA3-B22C-8575-A97EAD3FC8A5">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:46:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="12496496-EA36-E281-3205-CE8F2AE6D929">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:46:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prcIncremento" id="983256C3-B23D-DB44-5AA2-FD71671E1566">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:46:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8073A02-0D14-4EDA-A446-EEA6F886B579" name="RegimenHospedaje_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:20:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D152CF36-6EFB-B6F6-3CD2-B571D99B1407"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07E16D70-1E35-D0EC-569A-6D12C43530B0" name="ReservaPaqueteTuristico">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 03:18:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="ABA48845-DE8E-F58A-C198-820F20E4FB41">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigoFV_paqueteTuristico" id="FFD62629-F1B1-4B25-0121-F15C16CE54E2">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3C81D91-9529-D65A-F7DD-C8350DE5E83E" referredColumn="DDD1ED3A-90B6-7442-A7D3-8B8581B668E2"/>
+</associations>
+</Column>
+<Column name="codigo_paqueteTuistico" id="46AE99F8-FC1C-1C55-C99E-DD536BAE9E4A">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:38:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D2C49F4-C060-096B-A01E-2F2E3F908FDD" referredColumn="EA1D9C2C-5A32-47AA-4196-EBE906EDEB13"/>
+</associations>
+</Column>
+<Column name="prcDescuento" id="75A69541-9F17-E2C0-EE15-9D96ABD989D7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:39:12 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subTotal" id="C976F248-6CE1-DFD4-2ABD-08FE72314012">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:41:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numPersonas" id="233AA12C-9299-FD0C-8D2A-E89E8E6DEA94">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:21:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precioPersona" id="BDCAFADA-4B15-27BB-8330-50DE592FCFE7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:21:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_horarioPaquete" id="01DDD394-5ADC-1FAD-2FBB-466D63125B3A">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7559130D-3AB5-E042-CF16-A99010005940" referredColumn="C66119FE-61F1-466A-2D5E-675F3A45DD03"/>
+</associations>
+</Column>
+<Column name="EstadoReservaPaquete_codigo" id="5D3E7832-DD7F-CE15-53E7-C37E85EA07A7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:16:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61010B59-5D6C-65E0-6E44-C03229C24DCB" referredColumn="A450C17E-0DEC-2520-0653-68F99A5086CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E37BB880-0573-F26E-C72A-264493204918" name="ReservaPaqueteTuristico_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABA48845-DE8E-F58A-C198-820F20E4FB41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12229366-E5E2-2ECE-116C-E98BA0016F1D" name="ReservaPaqueteTuristico_FacturaVentaPaqueteTuristico_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:37:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFD62629-F1B1-4B25-0121-F15C16CE54E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C3C790A-85C2-E7E5-B02D-ACA679ABDE9D" name="ReservaPaqueteTuristico_PaqueteTuristico_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:38:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46AE99F8-FC1C-1C55-C99E-DD536BAE9E4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F9B5E4D-EAF7-C42C-F571-03EDC021AB04" name="ReservaPaqueteTuristico_HorarioPaquete_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01DDD394-5ADC-1FAD-2FBB-466D63125B3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B02D884-9732-C64D-67D6-A202D9AF1490" name="ReservaPaqueteTuristico_EstadoReservaPaquete_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:16:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D3E7832-DD7F-CE15-53E7-C37E85EA07A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

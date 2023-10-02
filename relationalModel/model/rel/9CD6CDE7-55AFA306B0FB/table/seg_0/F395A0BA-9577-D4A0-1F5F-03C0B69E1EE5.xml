@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F395A0BA-9577-D4A0-1F5F-03C0B69E1EE5" name="ServicioAutoReservado">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:02:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="0E09B8EC-91EE-5FF4-72D4-0D35350D3766">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:02:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_svrReservado" id="C67D7DD6-7B62-3AE9-EBA6-5F13E3558892">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:02:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F09D721-B256-BAB6-2A18-D13D8BBF9AA2" referredColumn="A66BBC32-1785-CD76-D6DC-B1B60CB9CA25"/>
+</associations>
+</Column>
+<Column name="codigo_reservaAuto" id="965102A3-677C-3666-43DC-B906226281B7">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:03:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4CDCE3F-E2F4-C115-1F66-5DA5F8DD8F12" referredColumn="E1B3525B-4D75-7A64-BC5A-65736658FB86"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1028B9B-BE8E-EBFC-BC60-B04A34AA6B47" name="ServicioReservado_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:02:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E09B8EC-91EE-5FF4-72D4-0D35350D3766"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03FC97D1-5900-C7F6-A352-860970E8CF11" name="ServicioReservado_ServicioAdicionalAuto_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:02:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C67D7DD6-7B62-3AE9-EBA6-5F13E3558892"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFC22CFE-276D-FF25-979A-B88381C9B770" name="ServicioReservado_ReservaAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:03:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="965102A3-677C-3666-43DC-B906226281B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

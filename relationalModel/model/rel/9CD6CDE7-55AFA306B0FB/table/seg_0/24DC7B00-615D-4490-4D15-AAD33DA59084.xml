@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24DC7B00-615D-4490-4D15-AAD33DA59084" name="TipoArticulo">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:22:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="DB24978E-FECE-0629-724E-1DABF31EAC2C">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:22:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="AA3CDC8D-B19B-5739-A605-C615192456ED">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:22:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA92D50D-36D0-404F-15F6-291512FC9363" name="TipoArticulo_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:22:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB24978E-FECE-0629-724E-1DABF31EAC2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBED4796-9E2E-8B8E-9631-F1A271E2DAD7" name="Cliente">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:38:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cedula" id="7B4EB585-41FE-DAC3-B6CE-837DA0B74147">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="BC1F1208-9F6F-D2E7-E9BB-9DCE7A02D77E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="6EE613A6-91C6-58A7-F463-5CBC6B04264E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="23D36FFB-D27B-254A-9672-F36D58726647">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="D1AD7256-5BCF-643A-5DA7-DE79C9486CD3">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="6D8C8A12-0CB8-922D-F5A9-4DF716CF1772">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="76B3BF3C-CA53-7E2E-D652-DCDC928B75F6">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:04:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="70973E1F-E1DB-D101-8A2E-4EF320B9C214">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:04:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciudad" id="EDA2CCCC-89B1-C2D7-3AE2-073C36EE43FE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-14 23:37:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="313EFEBC-7D08-2EDB-DE06-8ECDF859DE0B" referredColumn="7BEE97E7-FC3D-33BF-91C2-120709F50F79"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27BA3B11-E717-81F4-91B4-4056EC8B2A2A" name="codigo_cliente">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:18:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DF553DD-DBDF-6705-F1FA-7BF39C27B6B2" name="correo_cliente">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 04:18:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC1F1208-9F6F-D2E7-E9BB-9DCE7A02D77E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41F1269D-2753-FA54-8556-AACDF2074140" name="Cliente_Ciudad_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-14 23:37:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDA2CCCC-89B1-C2D7-3AE2-073C36EE43FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

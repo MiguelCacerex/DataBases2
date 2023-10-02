@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3696583F-00CF-A008-28CF-C83A7DBA450B" name="Estado">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:40:24 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="58B8A9B9-0F06-6EC8-A7B2-AC6B5A7A6E97">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:47:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F093A872-76BF-641B-D1BD-2299C08D212A">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:47:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais_codigo" id="E64BF5C7-174C-71B4-FBF1-8418DE575A1D">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:49:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCAAAA48-B5F7-6BF6-EB0D-5E3AF0B6DEB5" referredColumn="1E300C46-8982-DADA-87B9-E44139B90730"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABE843B9-CA56-AE03-6F8D-A80D676BC372" name="Estado_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:47:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58B8A9B9-0F06-6EC8-A7B2-AC6B5A7A6E97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E48FBDA2-B118-CF59-88C0-103E596E92E7" name="Estado_Pais_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:49:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E64BF5C7-174C-71B4-FBF1-8418DE575A1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

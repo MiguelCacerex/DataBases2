@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="789FE972-FEDB-080D-8002-ABF39126F3DE" name="EstadoDetalleVentaArticulo">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:09:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_43</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dsecripcion" id="BBD5B944-3DF2-1E97-6DA3-E2FBCF5A3D1B">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="DA68D7CE-AAFE-4D80-BFA6-2DACD325BC9F">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26FFFA69-70F1-79F7-21FA-DED6EB60B763" name="EstadoDetalleVentaArticulo_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA68D7CE-AAFE-4D80-BFA6-2DACD325BC9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD3BAB65-81F6-70BE-2384-8525C686DEB7" name="Articulo">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:54:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="575DA144-FF71-EFCA-0C83-D26258FD52EB">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:22:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_tipoArticulo" id="0173B112-31B0-723E-E147-0DB455C754F4">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:23:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0542C0A7-4C81-4D23-FB38-9F03BE371D78" referredColumn="DB24978E-FECE-0629-724E-1DABF31EAC2C"/>
+</associations>
+</Column>
+<Column name="nombre" id="3C9F8A8F-7F13-A234-9776-2FF6100D46F1">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:24:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="BAC479E2-282E-FC1D-4A0C-DAF3B1966FA2">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:24:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="24F64D9C-CA19-F102-46BD-A5A40AF32646">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:24:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unidadesStock" id="07C3CBC2-DB6C-3EC5-2607-056E578179A9">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:24:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="urlImagen" id="8702003E-C7AF-459A-BA49-ABD735A4AD22">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:19:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EstadoArticulo_codigo" id="8127970A-4992-B0EE-9D13-D2979B257D74">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:08:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22F2AECA-A155-ECEF-F9EA-E6221241B30B" referredColumn="502E37C8-AEF8-1481-65F6-2CC6CFE1D2C7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AA82A60-EA40-0184-9CA1-433407E53844" name="Articulo_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:24:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="575DA144-FF71-EFCA-0C83-D26258FD52EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="096B5757-7ECB-C13B-3BE1-59F4F1C95F8F" name="Articulo_TipoArticulo_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 06:23:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0173B112-31B0-723E-E147-0DB455C754F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC3BCC0E-8307-8603-A01C-0D049590D9A9" name="Articulo_EstadoArticulo_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-16 03:08:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8127970A-4992-B0EE-9D13-D2979B257D74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

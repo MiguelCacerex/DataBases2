@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A955A551-6D1F-D80C-9371-F3EB76F2EE9B" name="Hotel">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:51:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="3404CB94-4E37-5C6F-2739-B24A8600F2AE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:57:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="350B9F52-D024-F746-2465-89555EABFC14">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:29:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="44684209-E007-5B3F-8C75-8E59D7C55054">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:04:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="5B9FF13C-F0A8-683D-13E3-723858F7C76F">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:04:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="D66337D0-90E5-69CC-4D9C-864636E3AF76">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:29:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="urlImagen" id="D2D902DC-8B59-8A6F-4C28-290224EDCD00">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:02:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_ciudad" id="B82E80F2-E8A7-9972-1C87-0B9DBE7ACA12">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:49:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="421D133F-D7AC-34B8-BF5C-2EFDBF71C429" referredColumn="7BEE97E7-FC3D-33BF-91C2-120709F50F79"/>
+</associations>
+</Column>
+<Column name="codigo_tipoHotel" id="9DB4D69B-5E02-FBAA-389F-722F18DF693E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:50:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2B1B780-A38C-5333-0BD0-8E026306D872" referredColumn="333B2FE8-C31B-A395-250C-03DD31A0790B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60AA5855-05ED-29DC-8DC4-686006C67E67" name="Hotel_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:57:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3404CB94-4E37-5C6F-2739-B24A8600F2AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E96D1297-3547-196D-CA4E-8CA0C03DFD41" name="Hotel_Ciudad_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:49:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B82E80F2-E8A7-9972-1C87-0B9DBE7ACA12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCFB37DA-3DCF-5480-71AF-4C080C4770FC" name="Hotel_TipoHotel_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:50:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DB4D69B-5E02-FBAA-389F-722F18DF693E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

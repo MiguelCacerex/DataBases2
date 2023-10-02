@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13C54E7B-D42E-2D91-DEB7-204794643F39" name="HorarioPaquete">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:10:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_33</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="C66119FE-61F1-466A-2D5E-675F3A45DD03">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:13:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia" id="7C54DEE7-AAC6-5B59-4B67-B039C39DBE80">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:13:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horaInicio" id="A8D3DF9D-062B-BB0A-59F9-5B0B3AE4372C">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:13:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horaFin" id="F6FE64EB-78F8-CFC9-C35C-F6085CEE11AD">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:13:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_paqueteTuristico" id="8F85D3CC-934F-0122-7188-CC4B6AF68FEA">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2187ED60-E732-3BB6-87DB-A5BAC6A5F605" referredColumn="EA1D9C2C-5A32-47AA-4196-EBE906EDEB13"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="268F0FE5-0FC8-0C7E-6B72-A03791D98C85" name="HorarioPaquete_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:13:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C66119FE-61F1-466A-2D5E-675F3A45DD03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4E5A9B1-F6CE-B019-B30B-BB589DE103A2" name="HorarioPaquete_PaqueteTuristico_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:15:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F85D3CC-934F-0122-7188-CC4B6AF68FEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

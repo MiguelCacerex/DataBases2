@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96F6D5B4-5E23-DAA1-8B52-BAD36A41635C" name="Instalacion">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:56:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="9B82E69B-A636-0B64-1BA1-0FF431FE55AF">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-14 23:41:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_hotel" id="9D411001-020A-4BC8-B611-87E95DA03067">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:09:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8AE4ECD-E443-50B8-25F0-13DF910308A0" referredColumn="3404CB94-4E37-5C6F-2739-B24A8600F2AE"/>
+</associations>
+</Column>
+<Column name="nombre" id="1589325D-E1B3-E24B-2BB3-A6C32015E4F2">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:17:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="CE3EF52C-C55F-DA4E-B5BD-8FA1A4865BB6">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:17:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="urlImagen" id="1FCD001B-8213-CAE5-09CF-14FB4D45F22C">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:17:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_tipoInstalacion" id="E118A51C-F986-D4B7-D5C5-FDEFE3BBF5AD">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:37:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5854A68D-46D9-B192-A83D-7A10AA13B36F" referredColumn="CD778190-B1D2-EC85-D054-A1EB18607EFB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4472B99-989B-CF68-BE85-05D860A0FCC3" name="Instalacion_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-14 23:41:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B82E69B-A636-0B64-1BA1-0FF431FE55AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46C41B7C-C700-8526-CC9D-5A18E49FCDF1" name="Instalacion_Hotel_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:09:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D411001-020A-4BC8-B611-87E95DA03067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="345F0824-DE9F-2D02-C218-CA3D023176B9" name="Instalacion_TipoIntalacion_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 16:37:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E118A51C-F986-D4B7-D5C5-FDEFE3BBF5AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

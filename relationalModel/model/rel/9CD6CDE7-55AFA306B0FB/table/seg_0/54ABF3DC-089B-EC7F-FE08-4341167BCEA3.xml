@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54ABF3DC-089B-EC7F-FE08-4341167BCEA3" name="TipoHotel">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:49:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="333B2FE8-C31B-A395-250C-03DD31A0790B">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:50:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="10669095-2F9E-8BCD-9FC3-872230BCAA84">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:20:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="1F6E0E99-2E3D-DB24-AFF2-DC597688D1BA">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:20:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95D2906B-352A-5FDE-D8C3-5C34BF0783B6" name="TipoHotel_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:50:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="333B2FE8-C31B-A395-250C-03DD31A0790B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CD52FB2-8C3D-38BB-8DAC-34C8F346D872" name="Automovil">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-11 02:54:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="4F96909A-E444-453C-87CA-0B558AD820DE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:53:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="placa" id="F7D55733-428E-717A-C07C-686E686EFCE5">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:50:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numPuestos" id="1F234387-B3A5-803F-C120-CC0F319FB587">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:06:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precioRentaDia" id="8B955CB5-17B7-CB08-8647-8B9D9B017294">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:09:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="4CBE94D0-11FA-7246-1D34-1001E3D85608">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:06:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="urlImagen" id="2206F6AC-EF9B-4955-226B-7E119F638DCB">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 14:07:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidadCarga" id="ED0E5267-D1C4-C6AB-80E5-FB2AB62982EE">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:55:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoCombustible" id="70C4038A-828F-AF2F-4572-CD20514D759D">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:55:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_tipoAuto" id="7AB25592-4186-F596-D287-32B43B10CD54">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:27:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="043F4108-CFFD-BB02-EE47-A72101858ACD" referredColumn="C200CA38-C7A8-E428-CD10-2B0B74F162D1"/>
+</associations>
+</Column>
+<Column name="codigo_gamaAuto" id="6FC428E0-13F3-85ED-46F7-54120A0FF54F">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:27:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E920A6C-C4DD-6E7F-BE38-47A988AD004D" referredColumn="8D5DB6B3-8503-9CA5-8234-A04BCD98288C"/>
+</associations>
+</Column>
+<Column name="codigo_marcaAuto" id="4B4F8E93-6470-4C36-7B27-86FE9D926342">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:42:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19317D98-DA7A-C66E-90CB-0C14BEAB5AD2" referredColumn="24E0595C-05D3-10B2-2D28-2831D39F00DC"/>
+</associations>
+</Column>
+<Column name="codigo_estadoAuto" id="B6A6B344-6638-E780-F4B9-B8373C569B21">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:47:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC6A5561-A099-D9DD-8D1E-8ADCF3EE0978" referredColumn="3AF1DC9B-E589-1ACE-4550-1E84467CC32F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C7CDD51-DB3C-AD76-D34D-4D377FD4FF13" name="Automovil_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-12 13:53:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F96909A-E444-453C-87CA-0B558AD820DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8D7F196-5CB1-33F2-2601-CC13CFAED47F" name="Automovil_TipoAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:27:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AB25592-4186-F596-D287-32B43B10CD54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6AD2C62-B320-28B7-D624-8C57B7EDD871" name="Automovil_GamaAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 00:27:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FC428E0-13F3-85ED-46F7-54120A0FF54F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63CD0082-2CFD-A2D5-58A4-C381BAB8C5A4" name="Automovil_MarcaAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:42:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B4F8E93-6470-4C36-7B27-86FE9D926342"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A76417C5-76A8-5D3D-960F-BB303676D868" name="Automovil_EstadoAutomovil_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-09-15 05:47:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6A6B344-6638-E780-F4B9-B8373C569B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
