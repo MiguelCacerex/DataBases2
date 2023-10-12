@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BA8A8DC-DF91-DA3B-7A30-B62EBC823B43" name="Proveedor">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0726BEC-A306-35A7-9119-4671FBED6EAD" name="Departamento">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-11 03:00:22 UTC</createdTime>
+<createdTime>2023-10-07 00:15:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<ordsAlias>table_11</ordsAlias>
+<ordsAlias>table_47</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="codigo" id="A579F646-3778-026E-2A7D-11DE9DF856F5">
+<Column name="codigo" id="E02ED6A4-7C18-CDA0-9E50-FABBAB05F247">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:30:22 UTC</createdTime>
+<createdTime>2023-10-07 00:16:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,9 +21,9 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombre" id="F30B47FD-8F5E-C5EE-8C59-B497B3A94635">
+<Column name="nombre" id="687D0ED3-4BD5-E79D-951D-ED42E10A0B42">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:30:22 UTC</createdTime>
+<createdTime>2023-10-07 00:16:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,28 +32,43 @@
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="descripcion" id="E0AD7316-F943-541A-6323-8BF39E4ACAB9">
+<Column name="codigo_pais" id="4E338CEC-DEDF-B64B-E142-F12A99E748CF">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:30:22 UTC</createdTime>
+<createdTime>2023-10-07 00:16:57 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="451F70E7-3E60-F944-3E0E-B8E515CCD86C" referredColumn="1E300C46-8982-DADA-87B9-E44139B90730"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C588AFFA-6E31-BA67-7592-699C3B2C5BC6" name="Proveedor_PK">
+<ind_PK_UK id="3C106CA9-9502-603C-0A0B-8EE17D517581" name="Departamento_PK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:30:22 UTC</createdTime>
+<createdTime>2023-10-07 00:16:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A579F646-3778-026E-2A7D-11DE9DF856F5"/>
+<colUsage columnID="E02ED6A4-7C18-CDA0-9E50-FABBAB05F247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C22BF004-2C6F-BF52-8D3E-57F3D446C5F7" name="Departamento_Pais_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-07 00:16:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E338CEC-DEDF-B64B-E142-F12A99E748CF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

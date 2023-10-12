@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_auto" id="28EFD8BB-24DD-A58E-3769-626C836856DD">
@@ -25,8 +27,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -40,9 +43,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -62,7 +67,7 @@
 <colUsage columnID="A66BBC32-1785-CD76-D6DC-B1B60CB9CA25"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C28FCB8F-9193-6E83-0435-A18F2EFE3E4A" name="ServicioAdicionalAuto_Automovil_FK">
+<ind_PK_UK id="C28FCB8F-9193-6E83-0435-A18F2EFE3E4A" name="SrviAdAuto_Auto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 05:58:17 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -72,7 +77,7 @@
 <colUsage columnID="28EFD8BB-24DD-A58E-3769-626C836856DD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="08659384-DC9B-D41B-D087-2B335E190EEE" name="ServicioAdicionalAuto_ServicioAdicional_FK">
+<ind_PK_UK id="08659384-DC9B-D41B-D087-2B335E190EEE" name="SrvAdAuto_SrvAd_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 05:58:21 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

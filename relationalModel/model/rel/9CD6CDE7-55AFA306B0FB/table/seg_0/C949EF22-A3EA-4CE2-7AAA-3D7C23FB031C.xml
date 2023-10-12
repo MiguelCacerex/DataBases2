@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AF17779-36BB-CD85-F2B8-3C8F2215F385" name="FacturaReservaAutomovil">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C949EF22-A3EA-4CE2-7AAA-3D7C23FB031C" name="Paquete">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-11 03:21:20 UTC</createdTime>
+<createdTime>2023-10-06 19:37:06 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<ordsAlias>table_23</ordsAlias>
+<ordsAlias>table_46</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="codigo" id="8DC3BD5C-BC50-4989-743E-B840610D5D8F">
+<Column name="codigo" id="F3927243-08D9-AFE1-BB54-5264A557C7CD">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:03:20 UTC</createdTime>
+<createdTime>2023-10-06 19:37:52 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,9 +21,9 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fechaVenta" id="44ED141F-779C-2356-7301-C3BF35DBE676">
+<Column name="fecha" id="BED23BF0-EE78-BC8C-BD9F-972552153A14">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:15:17 UTC</createdTime>
+<createdTime>2023-10-06 21:22:40 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="montoTotal" id="26650372-35CC-64D0-23BB-24535C9E3D50">
+<Column name="valorTotal" id="591F1A79-4D06-93D1-675C-95DC7C6B849B">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:15:17 UTC</createdTime>
+<createdTime>2023-10-06 23:08:00 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="codigo_paquete" id="BE97E0C7-6BA8-B440-9958-74B85EA17C7A">
+<Column name="codigo_tipoPaquete" id="85EC4CDC-AD9B-0728-8034-FD304B13360A">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-10-06 20:25:34 UTC</createdTime>
+<createdTime>2023-10-06 20:25:54 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,30 +56,56 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="4369721D-46AF-548F-FE5D-D64F51E9CCD7" referredColumn="F3927243-08D9-AFE1-BB54-5264A557C7CD"/>
+<colAssociation fkAssociation="C67848AB-3A27-B134-E45D-FA473EA1E2B8" referredColumn="96831109-C30A-F811-10FE-C7FE1638E1D1"/>
+</associations>
+</Column>
+<Column name="cedula_cliente" id="D39A2E7F-CE3F-3351-9DDE-82FE4E67CC96">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-07 03:03:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9B4A671-66CC-F991-15E2-3E0E0E8B8DFB" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="ACD72026-FA91-3AB2-2C32-81407B1F715D" name="FV_ResAuto_PK">
+<ind_PK_UK id="79199D3F-E2A9-9DF7-E4A3-7F65205E3AEE" name="Paquete_PK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-12 14:03:20 UTC</createdTime>
+<createdTime>2023-10-06 19:37:52 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8DC3BD5C-BC50-4989-743E-B840610D5D8F"/>
+<colUsage columnID="F3927243-08D9-AFE1-BB54-5264A557C7CD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B77FA905-5F1E-6DC4-CA82-35D458A57BE6" name="FR_Auto_Paquete_FK">
+<ind_PK_UK id="A9A0FBC8-0626-29CD-67F6-A386790251EC" name="Paquete_TipoPaquete_FK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-10-06 20:25:34 UTC</createdTime>
+<createdTime>2023-10-06 20:25:54 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BE97E0C7-6BA8-B440-9958-74B85EA17C7A"/>
+<colUsage columnID="85EC4CDC-AD9B-0728-8034-FD304B13360A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD4F4695-B5FA-F840-38E9-CD3175C79E27" name="Paquete_Cliente_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-07 03:03:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D39A2E7F-CE3F-3351-9DDE-82FE4E67CC96"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

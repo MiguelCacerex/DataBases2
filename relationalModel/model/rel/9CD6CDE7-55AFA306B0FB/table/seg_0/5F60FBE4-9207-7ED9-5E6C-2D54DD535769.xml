@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigoFR_auto" id="1FDBC6E0-7000-43EC-D977-6365E454DECD">
@@ -25,8 +27,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -40,8 +43,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -56,9 +60,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fechaRecogida" id="85469FD2-4663-FAD4-EC25-21D61ABEBDEA">
@@ -89,8 +93,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_ciudadRecogida" id="D45173F2-0C84-EB76-7F4A-E9AAA02FD646">
@@ -99,9 +103,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -114,8 +119,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -123,14 +129,15 @@
 <colAssociation fkAssociation="CDDE2C76-2382-BC7B-EE3E-481CBD78C881" referredColumn="7BEE97E7-FC3D-33BF-91C2-120709F50F79"/>
 </associations>
 </Column>
-<Column name="EstadoReservaAuto_codigo" id="A9D18BD3-A7DF-D029-8509-3B1B9D8317E6">
+<Column name="codigo_estadoReservaAut" id="A9D18BD3-A7DF-D029-8509-3B1B9D8317E6">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:34:47 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -151,7 +158,7 @@
 <colUsage columnID="E1B3525B-4D75-7A64-BC5A-65736658FB86"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2DCF4910-6448-8F44-28A6-9E9318FD1B15" name="ReservaAutomovil_Automovil_FK">
+<ind_PK_UK id="2DCF4910-6448-8F44-28A6-9E9318FD1B15" name="ResAuto_Auto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:02:41 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -161,7 +168,7 @@
 <colUsage columnID="D3882E2A-F29D-170E-3493-BA100F282BFD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FC5DF85A-5AB2-4DCB-3C30-FD848D7B14A7" name="ReservaAutomovil_FacturaVentaReservaAutomovil_FK">
+<ind_PK_UK id="FC5DF85A-5AB2-4DCB-3C30-FD848D7B14A7" name="ResAuto_FV_ResAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:03:23 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -181,7 +188,7 @@
 <colUsage columnID="D45173F2-0C84-EB76-7F4A-E9AAA02FD646"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A9CCD34D-DE0D-4EE5-4483-E6F67C954080" name="ReservaAutomovil_Ciudad_FK">
+<ind_PK_UK id="A9CCD34D-DE0D-4EE5-4483-E6F67C954080" name="ResAuto_Ciudad_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 06:14:54 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -191,7 +198,7 @@
 <colUsage columnID="764BD27D-6799-CCF8-70D8-1841FC67CC34"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6DE0CBA0-B70E-DDD0-B886-19CB2D562E88" name="ReservaAutomovil_EstadoReservaAuto_FK">
+<ind_PK_UK id="6DE0CBA0-B70E-DDD0-B886-19CB2D562E88" name="ResAuto_EstResAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:34:47 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

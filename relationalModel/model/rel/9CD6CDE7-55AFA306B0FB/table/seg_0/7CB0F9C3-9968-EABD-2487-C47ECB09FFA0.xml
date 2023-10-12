@@ -14,25 +14,12 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="cedula_cliente" id="81937510-AE25-018B-8DD6-71F516AAFBE4">
-<createdBy>Universidad</createdBy>
-<createdTime>2023-09-15 06:21:51 UTC</createdTime>
-<ownerDesignName>model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="473212BB-08C1-C926-3F04-2343465F6B74" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
-</associations>
 </Column>
 <Column name="fechaVenta" id="EB0BE6B5-A179-4088-CD03-0C674A361FD2">
 <createdBy>Universidad</createdBy>
@@ -53,9 +40,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cedula_cliente" id="512A0259-2D5B-8E85-B648-03F9D17ABCAB">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-07 05:04:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA780333-F257-C198-9DFC-0FE14C74B3F6" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -70,14 +73,14 @@
 <colUsage columnID="62002D0D-E8FB-3FCE-8850-CD82DDFF00A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F2F3FAF6-76DD-455B-4823-D380C30D24B8" name="FacturaVentaArticulo_Cliente_FK">
+<ind_PK_UK id="46EB598A-3EF3-0C1C-F3B7-67F97A7A0245" name="FacturaVentaArticulo_Cliente_FK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-15 06:21:51 UTC</createdTime>
+<createdTime>2023-10-07 05:04:46 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="81937510-AE25-018B-8DD6-71F516AAFBE4"/>
+<colUsage columnID="512A0259-2D5B-8E85-B648-03F9D17ABCAB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

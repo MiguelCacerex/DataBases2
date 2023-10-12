@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_tipoPaquete" id="8C8376B8-092A-D09C-D931-7F526F2B3535">
@@ -25,9 +27,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -40,9 +43,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -56,8 +60,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="precioPersona" id="B040A92C-B4D6-ED9D-9638-FC5ABA842ECE">
@@ -68,18 +72,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Ciudad_codigo" id="57E72331-F415-6FF5-E236-A9E883AFCFC1">
+<Column name="codigo_ciudad" id="57E72331-F415-6FF5-E236-A9E883AFCFC1">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:12:19 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -100,7 +105,7 @@
 <colUsage columnID="EA1D9C2C-5A32-47AA-4196-EBE906EDEB13"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="004DB349-6B32-BA44-FC7B-A39A254AD95C" name="PaqueteTuristico_TipoPaquete_FK">
+<ind_PK_UK id="004DB349-6B32-BA44-FC7B-A39A254AD95C" name="PT_TipoPaquete_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:32:06 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -110,7 +115,7 @@
 <colUsage columnID="8C8376B8-092A-D09C-D931-7F526F2B3535"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CD54ACAC-9E9C-732F-46CF-E5ED576F8E4B" name="PaqueteTuristico_Proveedor_FK">
+<ind_PK_UK id="CD54ACAC-9E9C-732F-46CF-E5ED576F8E4B" name="PT_Proveedor_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:32:13 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -120,7 +125,7 @@
 <colUsage columnID="6D6CD9CB-C317-8B36-5042-EBA0AFDA0F34"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="25BA0C28-6A7A-28D3-E38B-382788139975" name="PaqueteTuristico_Ciudad_FK">
+<ind_PK_UK id="25BA0C28-6A7A-28D3-E38B-382788139975" name="PT_Ciudad_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:12:19 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

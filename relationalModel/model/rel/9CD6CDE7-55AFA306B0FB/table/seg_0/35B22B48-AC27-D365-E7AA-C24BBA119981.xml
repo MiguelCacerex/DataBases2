@@ -14,21 +14,22 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descripcion" id="12623589-6147-0A35-2034-41B0D43C3648">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:40:17 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fechaInforme" id="19142E4A-1F0D-E44F-0F9E-B2178B732FBC">
@@ -47,8 +48,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -62,9 +64,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -94,7 +98,7 @@
 <colUsage columnID="54C4F5BA-8ADB-CCA9-CD9F-702516221616"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F63A6A26-73E2-7008-DCD2-DDBE3F201CE1" name="InformeReservaAuto_EstadoReservaAuto_FK">
+<ind_PK_UK id="F63A6A26-73E2-7008-DCD2-DDBE3F201CE1" name="Inf_ResAuto_EstResAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 02:41:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -104,7 +108,7 @@
 <colUsage columnID="AED049A3-B5CB-1F67-FA5D-771298CD1CA8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F8447EEF-7AEC-8282-F37E-AF2DF6FF637C" name="InformeReservaAuto_ReservaAutomovil_FK">
+<ind_PK_UK id="F8447EEF-7AEC-8282-F37E-AF2DF6FF637C" name="Inf_ResAuto_ResAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:05:31 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

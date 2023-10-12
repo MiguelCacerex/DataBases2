@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="placa" id="F7D55733-428E-717A-C07C-686E686EFCE5">
@@ -26,8 +28,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="numPuestos" id="1F234387-B3A5-803F-C120-CC0F319FB587">
@@ -38,8 +40,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="precioRentaDia" id="8B955CB5-17B7-CB08-8647-8B9D9B017294">
@@ -50,8 +52,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="color" id="4CBE94D0-11FA-7246-1D34-1001E3D85608">
@@ -61,8 +63,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="urlImagen" id="2206F6AC-EF9B-4955-226B-7E119F638DCB">
@@ -72,8 +74,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 BYTE</dataTypeSize>
-<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="capacidadCarga" id="ED0E5267-D1C4-C6AB-80E5-FB2AB62982EE">
@@ -84,8 +86,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="tipoCombustible" id="70C4038A-828F-AF2F-4572-CD20514D759D">
@@ -95,8 +97,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_tipoAuto" id="7AB25592-4186-F596-D287-32B43B10CD54">
@@ -105,8 +107,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -120,9 +123,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -135,9 +140,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -150,9 +157,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -172,7 +181,7 @@
 <colUsage columnID="4F96909A-E444-453C-87CA-0B558AD820DE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F8D7F196-5CB1-33F2-2601-CC13CFAED47F" name="Automovil_TipoAutomovil_FK">
+<ind_PK_UK id="F8D7F196-5CB1-33F2-2601-CC13CFAED47F" name="Auto_TipoAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 00:27:02 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -182,7 +191,7 @@
 <colUsage columnID="7AB25592-4186-F596-D287-32B43B10CD54"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B6AD2C62-B320-28B7-D624-8C57B7EDD871" name="Automovil_GamaAutomovil_FK">
+<ind_PK_UK id="B6AD2C62-B320-28B7-D624-8C57B7EDD871" name="Auto_GamaAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 00:27:06 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -192,7 +201,7 @@
 <colUsage columnID="6FC428E0-13F3-85ED-46F7-54120A0FF54F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="63CD0082-2CFD-A2D5-58A4-C381BAB8C5A4" name="Automovil_MarcaAutomovil_FK">
+<ind_PK_UK id="63CD0082-2CFD-A2D5-58A4-C381BAB8C5A4" name="Auto_MarcaAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 05:42:38 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -202,7 +211,7 @@
 <colUsage columnID="4B4F8E93-6470-4C36-7B27-86FE9D926342"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A76417C5-76A8-5D3D-960F-BB303676D868" name="Automovil_EstadoAutomovil_FK">
+<ind_PK_UK id="A76417C5-76A8-5D3D-960F-BB303676D868" name="Auto_EstAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 05:47:00 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigoFV_paqueteTuristico" id="FFD62629-F1B1-4B25-0121-F15C16CE54E2">
@@ -25,9 +27,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -40,9 +43,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -57,8 +61,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="subTotal" id="C976F248-6CE1-DFD4-2ABD-08FE72314012">
@@ -69,8 +73,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="numPersonas" id="233AA12C-9299-FD0C-8D2A-E89E8E6DEA94">
@@ -81,8 +85,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="precioPersona" id="BDCAFADA-4B15-27BB-8330-50DE592FCFE7">
@@ -93,8 +97,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_horarioPaquete" id="01DDD394-5ADC-1FAD-2FBB-466D63125B3A">
@@ -103,9 +107,10 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -118,8 +123,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -140,7 +146,7 @@
 <colUsage columnID="ABA48845-DE8E-F58A-C198-820F20E4FB41"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="12229366-E5E2-2ECE-116C-E98BA0016F1D" name="ReservaPaqueteTuristico_FacturaVentaPaqueteTuristico_FK">
+<ind_PK_UK id="12229366-E5E2-2ECE-116C-E98BA0016F1D" name="RPTuristico_FVPTuristico_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:37:51 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -150,7 +156,7 @@
 <colUsage columnID="FFD62629-F1B1-4B25-0121-F15C16CE54E2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7C3C790A-85C2-E7E5-B02D-ACA679ABDE9D" name="ReservaPaqueteTuristico_PaqueteTuristico_FK">
+<ind_PK_UK id="7C3C790A-85C2-E7E5-B02D-ACA679ABDE9D" name="RPT_PT_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:38:10 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -160,7 +166,7 @@
 <colUsage columnID="46AE99F8-FC1C-1C55-C99E-DD536BAE9E4A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9F9B5E4D-EAF7-C42C-F571-03EDC021AB04" name="ReservaPaqueteTuristico_HorarioPaquete_FK">
+<ind_PK_UK id="9F9B5E4D-EAF7-C42C-F571-03EDC021AB04" name="RPT_HorarioPaquete_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 16:15:15 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -170,7 +176,7 @@
 <colUsage columnID="01DDD394-5ADC-1FAD-2FBB-466D63125B3A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5B02D884-9732-C64D-67D6-A202D9AF1490" name="ReservaPaqueteTuristico_EstadoReservaPaquete_FK">
+<ind_PK_UK id="5B02D884-9732-C64D-67D6-A202D9AF1490" name="RPT_Est_RP_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:16:36 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

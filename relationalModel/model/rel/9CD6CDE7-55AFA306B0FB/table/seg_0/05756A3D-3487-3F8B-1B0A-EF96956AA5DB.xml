@@ -17,6 +17,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigoFV_articulo" id="A006374C-FFDE-D2F3-A99F-8A778BBEB210">
@@ -25,8 +26,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -40,8 +42,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -57,8 +60,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="numUnidades" id="1B10B950-0734-4168-20CA-924F9E701755">
@@ -69,8 +72,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="subTotal" id="51B0ED35-8D46-4014-1051-E9BB87859031">
@@ -81,8 +84,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_estadoDetalleArticulo" id="9399C36A-D592-0673-C111-E891F6E8A2E8">
@@ -91,8 +94,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -113,7 +117,7 @@
 <colUsage columnID="59966E49-2522-B6EC-7178-7B9BCC51D049"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E17AA2C9-6F45-02B4-F7CE-F472745B5E8B" name="DetalleVentaArticulo_FacturaVentaArticulo_FK">
+<ind_PK_UK id="E17AA2C9-6F45-02B4-F7CE-F472745B5E8B" name="DV_Art_FV_Art_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:25:47 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -123,7 +127,7 @@
 <colUsage columnID="A006374C-FFDE-D2F3-A99F-8A778BBEB210"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AC9E6049-2157-F6F3-68C8-72CE9FC2390D" name="DetalleVentaArticulo_Articulo_FK">
+<ind_PK_UK id="AC9E6049-2157-F6F3-68C8-72CE9FC2390D" name="DV_Art_Art_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:25:50 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -133,7 +137,7 @@
 <colUsage columnID="D090368C-9816-92DD-EF5C-22612F319ECF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C360C85F-C33D-3E11-F227-9F9068129A9A" name="DetalleVentaArticulo_EstadoDetalleVentaArticulo_FK">
+<ind_PK_UK id="C360C85F-C33D-3E11-F227-9F9068129A9A" name="DV_Art_EstadoDVArt_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:10:19 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
