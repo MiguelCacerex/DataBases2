@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE09C4F1-BC9B-B735-3C3A-6EA0C84A320D" name="TipoEmpleado">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:34:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_49</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="1A50C41C-892F-14A9-294C-E9124F57C2DF">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:34:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="ECF97FA7-DA5C-9BA5-2AAA-1C8612380E1E">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:35:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="C2CCE717-0262-BA98-E771-BF1CFA541A08">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:35:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7506BA0B-621C-8E16-46D0-422261A5A2BA" name="TipoEmpleado_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:34:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A50C41C-892F-14A9-294C-E9124F57C2DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

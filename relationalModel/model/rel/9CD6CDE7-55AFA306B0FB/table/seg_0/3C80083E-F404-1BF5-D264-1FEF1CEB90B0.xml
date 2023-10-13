@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C80083E-F404-1BF5-D264-1FEF1CEB90B0" name="Empleado">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:28:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_48</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="BB70316B-6778-5E03-C6C4-20C0FF2BC280">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:31:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="33C2B6D1-8BD6-296E-F944-8766FBA8B593">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="4162A85E-9AC2-0673-E433-D67B43B06F73">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="768BE553-5546-6F5C-39A9-776121A54EC0">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="C9BE4CE9-2B05-C512-1109-FB7E0839B941">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estadoCivil" id="BA2F6F1E-0FE7-5650-B032-BACABE67C110">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="DD96C580-F19B-CB1B-9F1E-7A6AD29C22EA">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaNacimiento" id="87B55360-C5DA-2DB1-BC88-F4437225DDC5">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:33:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_tipoEmpleado" id="4A710FB6-7E25-1FAD-CC17-9C4F675C251A">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:35:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2418170D-BA7A-71B9-7AA1-6CDBFF3EB316" referredColumn="1A50C41C-892F-14A9-294C-E9124F57C2DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9EE6136-5A12-9DAC-5165-9D8C89FC6A81" name="Empleado_PK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:31:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB70316B-6778-5E03-C6C4-20C0FF2BC280"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21512D46-546B-833F-54E4-888909E4153D" name="Empleado_TipoEmpleado_FK">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-13 01:35:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A710FB6-7E25-1FAD-CC17-9C4F675C251A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
