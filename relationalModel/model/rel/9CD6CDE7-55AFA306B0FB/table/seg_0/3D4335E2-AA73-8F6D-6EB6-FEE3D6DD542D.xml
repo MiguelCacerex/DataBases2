@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descripcion" id="39078FF8-DD5B-7779-7A01-EA7F3F817A56">
@@ -26,8 +28,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fechaInforme" id="E4B50447-DC8D-EDE8-A0B5-B9B6FB81A4C8">
@@ -46,8 +48,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -61,9 +64,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -93,7 +98,7 @@
 <colUsage columnID="454171A3-0DCB-A6B0-4378-E93BD77F7077"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A1ADC50E-E547-7500-FF47-855C3BAC316A" name="InformeReservaPaquete_EstadoReservaPaquete_FK">
+<ind_PK_UK id="A1ADC50E-E547-7500-FF47-855C3BAC316A" name="Inf_RP_EstRP_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:16:44 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -103,7 +108,7 @@
 <colUsage columnID="C7DFC462-2F9E-0842-000A-96DAE16D2C70"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BA9D2F79-602A-3189-AEA7-C0D824427DC0" name="InformeReservaPaquete_ReservaPaqueteTuristico_FK">
+<ind_PK_UK id="BA9D2F79-602A-3189-AEA7-C0D824427DC0" name="Inf_RP_RPT_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:16:50 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

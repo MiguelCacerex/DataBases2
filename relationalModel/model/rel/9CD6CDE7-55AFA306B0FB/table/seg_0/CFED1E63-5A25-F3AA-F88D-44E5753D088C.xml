@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="789FE972-FEDB-080D-8002-ABF39126F3DE" name="EstadoDetalleVentaArticulo">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CFED1E63-5A25-F3AA-F88D-44E5753D088C" name="TipoPaquete">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-16 03:09:28 UTC</createdTime>
+<createdTime>2023-10-06 19:35:05 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<ordsAlias>table_43</ordsAlias>
+<ordsAlias>table_45</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="codigo" id="DA68D7CE-AAFE-4D80-BFA6-2DACD325BC9F">
+<Column name="codigo" id="96831109-C30A-F811-10FE-C7FE1638E1D1">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<createdTime>2023-10-06 19:36:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,9 +21,20 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="descripcion" id="BBD5B944-3DF2-1E97-6DA3-E2FBCF5A3D1B">
+<Column name="descripcion" id="B34B4BE6-52E1-FD54-494A-0865B04BFC56">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<createdTime>2023-10-06 19:36:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C8F92AC5-DB5D-896A-C45C-7628219C7783">
+<createdBy>Universidad</createdBy>
+<createdTime>2023-10-06 22:59:28 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,15 +45,15 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="26FFFA69-70F1-79F7-21FA-DED6EB60B763" name="EstadoDetalleVentaArticulo_PK">
+<ind_PK_UK id="F4662575-A7C8-C9D8-4259-BEE19D14771D" name="TipoPaquete_PK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-16 03:10:15 UTC</createdTime>
+<createdTime>2023-10-06 19:36:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DA68D7CE-AAFE-4D80-BFA6-2DACD325BC9F"/>
+<colUsage columnID="96831109-C30A-F811-10FE-C7FE1638E1D1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descripcion" id="27A6FCE9-8F68-19E6-51A5-440AB3DBB13A">
@@ -26,8 +28,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255 CHAR</dataTypeSize>
-<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fechaInforme" id="57F2B4E4-0CB6-248E-AAA5-00DBA2B10ADF">
@@ -40,14 +42,15 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="EstadoReservaHospedaje_codigo" id="A510EF29-7945-2D60-3540-7EAFB2A60EDE">
+<Column name="codigo_estadoReservaHsp" id="A510EF29-7945-2D60-3540-7EAFB2A60EDE">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:00:22 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -61,8 +64,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -93,7 +97,7 @@
 <colUsage columnID="4C1610A8-C96D-6EA6-90C6-85B7ECDE5333"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2C25AAFA-3775-1F67-E550-5C67875BF8B5" name="InformeReservaHospedaje_EstadoReservaHospedaje_FK">
+<ind_PK_UK id="2C25AAFA-3775-1F67-E550-5C67875BF8B5" name="Inf_ResHsp_EstResHsp_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:00:22 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -103,7 +107,7 @@
 <colUsage columnID="A510EF29-7945-2D60-3540-7EAFB2A60EDE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9CF52261-CC24-780E-0907-31339726565E" name="InformeReservaHospedaje_DetalleReservaHospedaje_FK">
+<ind_PK_UK id="9CF52261-CC24-780E-0907-31339726565E" name="Inf_ResHsp_DResHsp_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-16 03:06:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

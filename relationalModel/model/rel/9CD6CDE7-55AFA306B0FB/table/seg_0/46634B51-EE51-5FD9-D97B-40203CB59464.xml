@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fechaVenta" id="45D5B752-4460-4FCF-5458-C824FA032EBB">
@@ -37,28 +39,29 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,1,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cedula_cliente" id="66C96333-3AF0-22F8-AD2F-E3A39D98D482">
+<Column name="codigo_paquete" id="48669569-BDA9-657A-917F-1E7DF356C559">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-15 15:46:19 UTC</createdTime>
+<createdTime>2023-10-06 20:25:40 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="0C7B7B7C-BF2F-6B40-39B0-1A6C67F62ABD" referredColumn="7B4EB585-41FE-DAC3-B6CE-837DA0B74147"/>
+<colAssociation fkAssociation="6472A0AC-A540-A4B3-C9A4-AABFBEC1FF88" referredColumn="F3927243-08D9-AFE1-BB54-5264A557C7CD"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1832B530-48EA-9460-F0EB-B7E5C9A99001" name="FacturaVentaPaqueteTuristico_PK">
+<ind_PK_UK id="1832B530-48EA-9460-F0EB-B7E5C9A99001" name="FV_PT_PK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-12 14:37:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -69,14 +72,14 @@
 <colUsage columnID="DDD1ED3A-90B6-7442-A7D3-8B8581B668E2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="281B5B75-18D6-211F-2A26-3766517511FC" name="FacturaVentaPaqueteTuristico_Cliente_FK">
+<ind_PK_UK id="1CAC70CC-C4F0-862F-B03E-C833D5F5C2FC" name="FR_PTuristico_Paquete_FK">
 <createdBy>Universidad</createdBy>
-<createdTime>2023-09-15 15:46:19 UTC</createdTime>
+<createdTime>2023-10-06 20:25:40 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="66C96333-3AF0-22F8-AD2F-E3A39D98D482"/>
+<colUsage columnID="48669569-BDA9-657A-917F-1E7DF356C559"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

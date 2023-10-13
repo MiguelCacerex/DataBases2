@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2187ED60-E732-3BB6-87DB-A5BAC6A5F605" containerWithKeyObject="13C54E7B-D42E-2D91-DEB7-204794643F39" localFKIndex="D4E5A9B1-F6CE-B019-B30B-BB589DE103A2" name="HorarioPaquete_PaqueteTuristico_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2187ED60-E732-3BB6-87DB-A5BAC6A5F605" containerWithKeyObject="13C54E7B-D42E-2D91-DEB7-204794643F39" localFKIndex="D4E5A9B1-F6CE-B019-B30B-BB589DE103A2" name="HorarioP_PT_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 16:15:19 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

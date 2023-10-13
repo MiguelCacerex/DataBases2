@@ -14,9 +14,11 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_svrReservado" id="C67D7DD6-7B62-3AE9-EBA6-5F13E3558892">
@@ -25,8 +27,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -40,8 +43,9 @@
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -62,7 +66,7 @@
 <colUsage columnID="0E09B8EC-91EE-5FF4-72D4-0D35350D3766"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="03FC97D1-5900-C7F6-A352-860970E8CF11" name="ServicioReservado_ServicioAdicionalAuto_FK">
+<ind_PK_UK id="03FC97D1-5900-C7F6-A352-860970E8CF11" name="SrvRes_SrvAdAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 06:02:36 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -72,7 +76,7 @@
 <colUsage columnID="C67D7DD6-7B62-3AE9-EBA6-5F13E3558892"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CFC22CFE-276D-FF25-979A-B88381C9B770" name="ServicioReservado_ReservaAutomovil_FK">
+<ind_PK_UK id="CFC22CFE-276D-FF25-979A-B88381C9B770" name="SrvRes_ResAuto_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 06:03:23 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
