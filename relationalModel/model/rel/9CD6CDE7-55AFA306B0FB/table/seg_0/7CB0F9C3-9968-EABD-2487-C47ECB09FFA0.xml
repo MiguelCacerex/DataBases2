@@ -73,7 +73,7 @@
 <colUsage columnID="62002D0D-E8FB-3FCE-8850-CD82DDFF00A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="46EB598A-3EF3-0C1C-F3B7-67F97A7A0245" name="FacturaVentaArticulo_Cliente_FK">
+<ind_PK_UK id="46EB598A-3EF3-0C1C-F3B7-67F97A7A0245" name="FacVentaArticulo_Cliente">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-10-07 05:04:46 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

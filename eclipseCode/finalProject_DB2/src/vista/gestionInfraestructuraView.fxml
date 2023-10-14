@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="900.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabHoteles" text="Gestión de hoteles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9ACD32;">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="900.0" prefWidth="1200.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="14.0" text="INFORMACIÓN HOTELES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="119.0" layoutY="68.0" prefHeight="240.0" prefWidth="286.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="121.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="165.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Nombre:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtNombreHotel" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" />
+                                          <Label text="Correo:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCorreoHotel" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtTelefonoHotel" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Teléfono:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <GridPane layoutX="501.0" layoutY="66.0" prefHeight="243.0" prefWidth="304.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Dirección:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="txtDireccionHotel" prefHeight="38.0" prefWidth="165.0" GridPane.columnIndex="1" />
+                                          <Label text="Ciudad:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboCiudadHotel" onAction="#ciudadHotelAction" prefHeight="25.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Tipo de hotel:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboTipoHotel" onAction="#tipoHotelAction" prefHeight="25.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="351.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnNuevoHotel" layoutX="316.0" layoutY="365.0" mnemonicParsing="false" onAction="#nuevoHotelAction" prefHeight="53.0" prefWidth="138.0" text="NUEVO">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnActualizarHotel" layoutX="555.0" layoutY="365.0" mnemonicParsing="false" onAction="#actualizarHotelAction" prefHeight="53.0" prefWidth="139.0" text="ACTUALIZAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAgregarHotel" layoutX="795.0" layoutY="365.0" mnemonicParsing="false" onAction="#agregarHotelAction" prefHeight="53.0" prefWidth="139.0" text="AGREGAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="958.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+                                    <ImageView fx:id="imagenHotel" fitHeight="250.0" fitWidth="178.0" layoutX="968.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imagenes/imagenHotel.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane layoutX="19.0" layoutY="49.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Label layoutX="45.0" layoutY="14.0" text="LISTA DE HOTELES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <TableView fx:id="tableHoteles" layoutX="45.0" layoutY="74.0" prefHeight="278.0" prefWidth="1103.0">
+                                      <columns>
+                                        <TableColumn fx:id="columCodigoHotel" prefWidth="75.0" text="Código" />
+                                        <TableColumn fx:id="columNombreHotel" prefWidth="114.0" text="Nombre" />
+                                          <TableColumn fx:id="columCorreoHotel" prefWidth="227.0" text="Correo" />
+                                          <TableColumn fx:id="columTelefonoHotel" prefWidth="141.0" text="Teléfono" />
+                                          <TableColumn fx:id="columDireccionHotel" prefWidth="248.0" text="Dirección" />
+                                          <TableColumn fx:id="columCiudadHotel" prefWidth="156.0" text="Ciudad" />
+                                          <TableColumn fx:id="columTipoHotel" prefWidth="141.0" text="Tipo" />
+                                      </columns>
+                                    </TableView>
+                                    <Separator layoutX="19.0" layoutY="363.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnEliminarHotel" layoutX="974.0" layoutY="374.0" mnemonicParsing="false" onAction="#eliminarHotelAction" prefHeight="35.0" prefWidth="139.0" text="ELIMINAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabHabitaciones" text="Gestión de habitaciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9ACD32;">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="900.0" prefWidth="1200.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="14.0" text="INFORMACIÓN HABITACIONES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="119.0" layoutY="90.0" prefHeight="202.0" prefWidth="369.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="101.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Número de cuartos:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtNumCuartosHabitacion" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" />
+                                          <Label text="Capacidad:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtCapacidadHabitacion" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtPrecioNocheHabitacion" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Precio noche:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <GridPane layoutX="568.0" layoutY="94.0" prefHeight="194.0" prefWidth="369.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Hotel asociado:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Tipo de habitación:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Estado de habitación" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nivel de habitación:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboHotelAsociadoHabitacion" onAction="#hotelAsociadoHabitacionAction" prefHeight="25.0" prefWidth="191.0" GridPane.columnIndex="1" />
+                                          <ComboBox fx:id="comboTipoHabitacion" onAction="#tipoHabitacionAction" prefHeight="25.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <ComboBox fx:id="comboEstadoHabitacion" onAction="#estadoHabitacionAction" prefHeight="25.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <ComboBox fx:id="comboNivelHabitacion" onAction="#nivelHabitacionAction" prefHeight="25.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="351.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnNuevaHabitacion" layoutX="288.0" layoutY="368.0" mnemonicParsing="false" onAction="#nuevaHabitacionAction" prefHeight="53.0" prefWidth="138.0" text="NUEVA">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnActualizarHabitacion" layoutX="530.0" layoutY="369.0" mnemonicParsing="false" onAction="#actualizarHabitacionAction" prefHeight="52.0" prefWidth="139.0" text="ACTUALIZAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAgregarHabitacion" layoutX="776.0" layoutY="369.0" mnemonicParsing="false" onAction="#agregarHabitacionAction" prefHeight="51.0" prefWidth="139.0" text="AGREGAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="970.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+                                    <ImageView fx:id="imagenHabitacion" fitHeight="250.0" fitWidth="178.0" layoutX="977.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imagenes/imagenHabitacion.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="19.0" layoutY="49.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Label layoutX="45.0" layoutY="14.0" text="LISTA DE HABITACIONES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <TableView fx:id="tableHabitaciones" layoutX="45.0" layoutY="74.0" prefHeight="278.0" prefWidth="1103.0">
+                                       <columns>
+                                          <TableColumn fx:id="columCodigoHabitacion" prefWidth="75.0" text="Código" />
+                                          <TableColumn fx:id="columNumCuartosHabitacion" prefWidth="114.0" text="Numero cuartos" />
+                                          <TableColumn fx:id="columCapacidadHabitacion" prefWidth="143.0" text="Capacidad" />
+                                          <TableColumn fx:id="columPrecioNocheHabitacion" prefWidth="156.0" text="Precio noche" />
+                                          <TableColumn fx:id="columHotelAsociadoHabitacion" prefWidth="198.0" text="Hotel asociado" />
+                                          <TableColumn fx:id="columTipoHabitacion" prefWidth="139.0" text="Tipo de habitación" />
+                                          <TableColumn fx:id="columEstadoHbaitacion" prefWidth="140.0" text="Estado de habitación" />
+                                          <TableColumn fx:id="columNivelHabitacion" prefWidth="137.0" text="Nivel habitación" />
+                                       </columns>
+                                    </TableView>
+                                    <Separator layoutX="19.0" layoutY="363.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnEliminarHabitacion" layoutX="974.0" layoutY="374.0" mnemonicParsing="false" onAction="#eliminarHabitacionAction" prefHeight="35.0" prefWidth="139.0" text="ELIMINAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabInstalaciones" text="Gestión de instalaciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9ACD32;">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="900.0" prefWidth="1200.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="14.0" text="INFORMACIÓN INSTALACIONES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="119.0" layoutY="90.0" prefHeight="202.0" prefWidth="369.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="101.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Nombre:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtNombreInstalacion" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" />
+                                          <Label text="Descripción:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="txtDescripcionInstalacion" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <GridPane layoutX="568.0" layoutY="94.0" prefHeight="194.0" prefWidth="369.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Hotel asociado:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboHotelAsociadoInstalacion" onAction="#hotelAsociadoInstalacionAction" prefHeight="25.0" prefWidth="191.0" GridPane.columnIndex="1" />
+                                          <ComboBox fx:id="comboTipoInstalacion" onAction="#tipoInstalacionAction" prefHeight="25.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Tipo de instalación:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="351.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnNuevaInstalacion" layoutX="288.0" layoutY="368.0" mnemonicParsing="false" onAction="#nuevaInstalacionAction" prefHeight="53.0" prefWidth="138.0" text="NUEVA">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnActualizarInstalacion" layoutX="530.0" layoutY="369.0" mnemonicParsing="false" onAction="#actualizarInstalacionAction" prefHeight="52.0" prefWidth="139.0" text="ACTUALIZAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAgregarInstalacion" layoutX="776.0" layoutY="369.0" mnemonicParsing="false" onAction="#agregarInstalacionAction" prefHeight="51.0" prefWidth="139.0" text="AGREGAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="970.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+                                    <ImageView fx:id="imagenInstalacion" fitHeight="250.0" fitWidth="178.0" layoutX="977.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imagenes/imagenHabitacion.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="19.0" layoutY="49.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Label layoutX="45.0" layoutY="14.0" text="LISTA DE INSTALACIONES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <TableView fx:id="tableInstalaciones" layoutX="45.0" layoutY="74.0" prefHeight="278.0" prefWidth="1103.0">
+                                       <columns>
+                                          <TableColumn fx:id="columCodigoInstalacion" prefWidth="125.0" text="Código" />
+                                          <TableColumn fx:id="columNombreInstalacion" prefWidth="192.0" text="Nombre" />
+                                          <TableColumn fx:id="columDescripcionInstalacion" prefWidth="330.0" text="Descripcion" />
+                                          <TableColumn fx:id="columHotelInstalacion" prefWidth="237.0" text="Hotel" />
+                                          <TableColumn fx:id="columTipoInstalacion" prefWidth="218.0" text="Tipo de instalación" />
+                                       </columns>
+                                    </TableView>
+                                    <Separator layoutX="19.0" layoutY="363.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnEliminarInstalacion" layoutX="974.0" layoutY="374.0" mnemonicParsing="false" onAction="#eliminarInstalacionAction" prefHeight="35.0" prefWidth="139.0" text="ELIMINAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
