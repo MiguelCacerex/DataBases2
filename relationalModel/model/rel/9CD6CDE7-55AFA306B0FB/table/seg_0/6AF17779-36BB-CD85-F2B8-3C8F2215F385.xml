@@ -15,9 +15,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<ownDataTypeParameters>,4,4</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -38,9 +38,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>8</dataTypeScale>
-<ownDataTypeParameters>,1,8</ownDataTypeParameters>
+<ownDataTypeParameters>,8,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="codigo_paquete" id="BE97E0C7-6BA8-B440-9958-74B85EA17C7A">
@@ -50,9 +50,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

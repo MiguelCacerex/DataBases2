@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="600.0" minWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="90.0" prefHeight="510.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Alojamientos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #F4F6F6;">
+                     <children>
+                        <AnchorPane prefHeight="201.0" prefWidth="1000.0" style="-fx-background-color: #ABEBC6;">
+                           <children>
+                              <AnchorPane layoutX="59.0" layoutY="15.0" prefHeight="175.0" prefWidth="862.0" style="-fx-background-color: #004E64; -fx-background-radius: 20px;">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="22.0" text="Destino" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="22.0" layoutY="51.0" prefHeight="34.0" prefWidth="286.0" />
+                                    <Label layoutX="342.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="343.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="492.0" layoutY="23.0" text="Fecha Vuelta" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="493.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="650.0" layoutY="23.0" text="Habitaciones" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="650.0" layoutY="51.0" prefHeight="34.0" prefWidth="150.0" />
+                                    <Label layoutX="22.0" layoutY="115.0" text="Intalaciones" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="142.0" layoutY="112.0" prefHeight="34.0" prefWidth="658.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Text fill="#25a18e" layoutX="10.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El tipo de alojamiento dice mucho sobre el viaje, ¿Qué estas buscando?" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="11.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="198.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(1).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="63.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoteles" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="244.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="156.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/OIP.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="62.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resorts" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="480.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="198.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(3).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="16.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoteles Boutique" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="713.0" layoutY="274.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="198.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(4).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="27.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamentos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Turismo">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="-1.0" layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1000.0" style="-fx-background-color: #F4F6F6;">
+                           <children>
+                              <AnchorPane prefHeight="201.0" prefWidth="1000.0" style="-fx-background-color: #ABEBC6;">
+                                 <children>
+                                    <AnchorPane layoutX="59.0" layoutY="15.0" prefHeight="175.0" prefWidth="862.0" style="-fx-background-color: #004E64; -fx-background-radius: 20px;">
+                                       <children>
+                                          <Label layoutX="22.0" layoutY="22.0" text="Tipo" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField layoutX="22.0" layoutY="51.0" prefHeight="34.0" prefWidth="286.0" />
+                                          <Label layoutX="342.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker layoutX="343.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                          <Label layoutX="492.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker layoutX="493.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                          <Label layoutX="650.0" layoutY="23.0" text="Personas" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField layoutX="650.0" layoutY="51.0" prefHeight="34.0" prefWidth="150.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <Text fill="#25a18e" layoutX="10.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El tipo de turismo dice mucho sobre el viaje, ¿Qué estas buscando?" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane layoutX="11.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                 <children>
+                                    <ImageView fitHeight="198.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../../Downloads/R%20(5).jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#25a18e" layoutX="63.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonyi" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="244.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                 <children>
+                                    <ImageView fitHeight="156.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../../Downloads/bcc5a85495b3d71a4b8212ab64d1cd44.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#25a18e" layoutX="62.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aventura" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="480.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                 <children>
+                                    <ImageView fitHeight="164.0" fitWidth="141.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../../Downloads/OIP%20(2).jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#25a18e" layoutX="75.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="713.0" layoutY="274.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                                 <children>
+                                    <ImageView fitHeight="173.0" fitWidth="151.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../../Downloads/OIP%20(3).jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#25a18e" layoutX="61.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ballenas" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Autos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1000.0" style="-fx-background-color: #F4F6F6;">
+                     <children>
+                        <AnchorPane prefHeight="201.0" prefWidth="1000.0" style="-fx-background-color: #ABEBC6;">
+                           <children>
+                              <AnchorPane layoutX="59.0" layoutY="15.0" prefHeight="175.0" prefWidth="862.0" style="-fx-background-color: #004E64; -fx-background-radius: 20px;">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="22.0" text="Tipo" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="22.0" layoutY="51.0" prefHeight="34.0" prefWidth="286.0" />
+                                    <Label layoutX="342.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="343.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="492.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="493.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="650.0" layoutY="23.0" text="Personas" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="650.0" layoutY="51.0" prefHeight="34.0" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Text fill="#25a18e" layoutX="10.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El tipo de turismo dice mucho sobre el viaje, ¿Qué estas buscando?" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="11.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="198.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/OIP%20(4).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="63.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonyi" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="244.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="156.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(6).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="62.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aventura" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="480.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="139.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(7).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="75.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="713.0" layoutY="274.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="138.0" fitWidth="174.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(8).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="61.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ballenas" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Productos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1000.0" style="-fx-background-color: #F4F6F6;">
+                     <children>
+                        <AnchorPane prefHeight="201.0" prefWidth="1000.0" style="-fx-background-color: #ABEBC6;">
+                           <children>
+                              <AnchorPane layoutX="59.0" layoutY="15.0" prefHeight="175.0" prefWidth="862.0" style="-fx-background-color: #004E64; -fx-background-radius: 20px;">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="22.0" text="Tipo" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="22.0" layoutY="51.0" prefHeight="34.0" prefWidth="286.0" />
+                                    <Label layoutX="342.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="343.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="492.0" layoutY="23.0" text="Fecha Salida" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="493.0" layoutY="51.0" prefHeight="35.0" prefWidth="131.0" />
+                                    <Label layoutX="650.0" layoutY="23.0" text="Personas" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="650.0" layoutY="51.0" prefHeight="34.0" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Text fill="#25a18e" layoutX="10.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El tipo de turismo dice mucho sobre el viaje, ¿Qué estas buscando?" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="11.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="151.0" fitWidth="191.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/OIP%20(5).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="63.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peluches" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="244.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="147.0" fitWidth="121.0" layoutX="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(9).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="62.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerdos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="480.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="152.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(10).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="64.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calzado" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="713.0" layoutY="274.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="138.0" fitWidth="174.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Downloads/R%20(11).jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#25a18e" layoutX="81.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pins" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Paquetes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Text fill="#25a18e" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospedar.com" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="47.0" fitWidth="49.0" layoutX="925.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Downloads/Theo%20&amp;%20Kate%20(3).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

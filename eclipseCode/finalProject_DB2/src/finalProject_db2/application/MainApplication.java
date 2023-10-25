@@ -1,6 +1,12 @@
 package finalProject_db2.application;
 
+import java.io.IOException;
+
+import finalProject_db2.controller.LoginViewController;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class MainApplication extends Application {
@@ -16,7 +22,7 @@ public class MainApplication extends Application {
 
 		this.stage = primaryStage;
 		this.stage.setTitle("WorldTravel");
-		ShowLogin();
+		showLogin();
 	}
 
 	/**
@@ -27,9 +33,36 @@ public class MainApplication extends Application {
 		launch(args);
 	}
 
-	private void ShowLogin() {
-		// TODO Auto-generated method stub
+	public void showLogin() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApplication.class.getResource("../view/loginView.fxml"));
 
+			AnchorPane rootLayout =  loader.load();
+
+			LoginViewController loginViewController = loader.getController();
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

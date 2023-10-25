@@ -13,19 +13,17 @@ public class Conexion {
     static ResultSet resultado = null;
 
 	private static String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	private static String usuario = "FINAL_PROJECT";
+	private static String usuario = "HR_DB";
 	private static String contraseña = "123";
 
 
 	public static Connection getConnection(String peticionSql){
 
 		 try {
-
 			 	// Establecer la conexión
 	            conexion = DriverManager.getConnection(url, usuario, contraseña);
 
 	            System.out.println("Conexion establecida");
-
 
 	            String sql = "Select * from employees";
 

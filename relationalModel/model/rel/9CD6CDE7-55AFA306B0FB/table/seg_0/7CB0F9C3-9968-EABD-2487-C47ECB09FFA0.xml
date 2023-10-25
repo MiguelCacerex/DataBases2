@@ -15,9 +15,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,1,4</ownDataTypeParameters>
+<ownDataTypeParameters>,4,4</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -39,9 +39,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>8</dataTypeScale>
-<ownDataTypeParameters>,1,8</ownDataTypeParameters>
+<ownDataTypeParameters>,8,8</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Paquete_codigo" id="9A54CE06-4833-F8E6-6597-947689486E88">
@@ -51,7 +51,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
@@ -73,7 +73,7 @@
 <colUsage columnID="62002D0D-E8FB-3FCE-8850-CD82DDFF00A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FC6A1AC8-DA29-7C64-75DA-569C13FC1D76" name="FacturaVentaArticulo_Paquete_FK">
+<ind_PK_UK id="FC6A1AC8-DA29-7C64-75DA-569C13FC1D76" name="FVArt_Paquete_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-10-12 22:57:16 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

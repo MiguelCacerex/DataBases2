@@ -15,9 +15,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,1,2</ownDataTypeParameters>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,4,4</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -104,8 +104,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -126,7 +126,7 @@
 <colUsage columnID="BB70316B-6778-5E03-C6C4-20C0FF2BC280"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="21512D46-546B-833F-54E4-888909E4153D" name="Empleado_TipoEmpleado_FK">
+<ind_PK_UK id="21512D46-546B-833F-54E4-888909E4153D" name="Empleado_TipoEpd_FK">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-10-13 01:35:26 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
