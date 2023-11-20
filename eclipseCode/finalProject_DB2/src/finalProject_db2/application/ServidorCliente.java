@@ -1,84 +1,60 @@
 package finalProject_db2.application;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import finalProject_db2.controller.LoginViewController;
-import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
+public class ServidorCliente {
 
-public class Server extends Application {
+	int puerto;
+	ServerSocket serverComunicacion;
 
-	private Stage stage;
+	PrintWriter outCliente;
+	BufferedReader inCliente;
 
-    private static final int PORT = 12345;
+	// private DataInputStream flujoEntradaComunicacion;
+	// private DataOutputStream flujoSalidaComunicacion;
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+	/*
+	 * Constructor de la clase
+	 */
+	public ServidorCliente(int puerto) {
+		this.puerto = puerto;
+	}
 
-    @Override
-    public void start(Stage primaryStage) {
-        primaryStage.setTitle("Servidor");
-        StackPane root = new StackPane();
-        root.getChildren().add(new Label("Esperando clientes..."));
-        primaryStage.setScene(new Scene(root, 300, 200));
-        primaryStage.show();
+	public void runServer() throws IOException {
 
-    	this.stage = primaryStage;
-		this.stage.setTitle("Cliente");
+		serverComunicacion = new ServerSocket(puerto);
 
-        new Thread(() -> {
-            try {
-                ServerSocket serverSocket = new ServerSocket(PORT);
-                while (true) {
-                    Socket clientSocket = serverSocket.accept();
-                    Platform.runLater(() -> showLogin());
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }).start();
-    }
+		while (true) {
 
-    public void showLogin() {
-		try {
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApplication.class.getResource("../view/loginView.fxml"));
+			System.out.println("<----------------------------Servidor Cliente---------------------------->");
+			Socket socketComunicacionCliente = null;
 
-			AnchorPane rootLayout =  loader.load();
+			socketComunicacionCliente = serverComunicacion.accept();
 
-			LoginViewController loginViewController = loader.getController();
-			Scene scene = new Scene(rootLayout);
-			stage.setScene(scene);
+			System.out.println("Conexión establecida");
 
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			inCliente = new BufferedReader(new InputStreamReader(socketComunicacionCliente.getInputStream()));
+			outCliente = new PrintWriter(socketComunicacionCliente.getOutputStream(), true);
+
+
+			iniciarHiloClienteServidor();
 		}
+
+	}
+
+	private void iniciarHiloClienteServidor() {
+
+		HiloClienteServidor hiloClienteServidor = new HiloClienteServidor();
+
+		hiloClienteServidor.inicializar(inCliente, outCliente, this);
+
+		hiloClienteServidor.start();
 	}
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #004E64;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="42.0" layoutY="16.0" text="PERFIL" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="13.0" prefWidth="671.0" style="-fx-background-color: #ffffff;" />
+      <Separator layoutX="15.0" layoutY="51.0" prefWidth="671.0" style="-fx-background-color: #ffffff;" />
+      <ImageView fx:id="imagenPerfil" fitHeight="200.0" fitWidth="200.0" layoutX="105.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/perfil.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelNombreEmpleado" layoutX="96.0" layoutY="73.0" text="Luis Carlos Lopez" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="347.0" layoutY="73.0" orientation="VERTICAL" prefHeight="613.0" prefWidth="5.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="478.0" layoutY="73.0" text="FUNCIONES:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="320.0" text="DATOS PERSONALES:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="14.0" layoutY="350.0" prefHeight="302.0" prefWidth="368.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Correo: " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCorreoEmpleado" text="luis@gmail.com" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Teléfono:" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Estado civil:" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTelefonoEmpleado" text="31234099" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelEstadoCivilEmpleado" text="Casado" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Dirección:" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="177.0" text="Fecha nacimiento:" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="154.0" text="Puesto:" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelDireccionEmpleado" prefHeight="22.0" prefWidth="158.0" text="Barrio casa nueva" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelFechaNacimientoEmpleado" prefHeight="22.0" prefWidth="158.0" text="01/01/1990" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTipoEmpleado" prefHeight="22.0" prefWidth="158.0" text="Administrador" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="btnEditarDatosEmpleado" layoutX="123.0" layoutY="652.0" mnemonicParsing="false" onAction="#editarDatosEmpleadoAction" prefHeight="30.0" prefWidth="97.0" text="EDITAR DATOS" />
+      <GridPane layoutX="430.0" layoutY="147.0" prefHeight="466.0" prefWidth="208.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnGestionInfraestructuraEmpleado" mnemonicParsing="false" onAction="#gestionarInfraestructuraEmpleadoAction" prefHeight="43.0" prefWidth="211.0" text="GESTIÓN DE INFRAESTRUCTURA" />
+            <Button fx:id="btnGestionArticuloEmpleado" mnemonicParsing="false" onAction="#gestionarArticuloEmpleadoAction" prefHeight="43.0" prefWidth="211.0" text="GESTIÓN DE ARTÍCULOS" GridPane.rowIndex="1" />
+            <Button fx:id="btnGestionPaqueteEmpleado" mnemonicParsing="false" onAction="#gestionarPaqueteEmpleadoAction" prefHeight="43.0" prefWidth="211.0" text="GESTIÓN DE PAQUETES" GridPane.rowIndex="2" />
+            <Button fx:id="btnGestionServicioAdicionalEmpleado" mnemonicParsing="false" onAction="#gestionarServicioAdicionalEmpleadoAction" prefHeight="43.0" prefWidth="208.0" text="GESTIÓN SERVICIOS ADICIONALES" GridPane.rowIndex="3" />
+            <Button fx:id="btnGestionEmpleado" mnemonicParsing="false" onAction="#gestionarEmpleadoAction" prefHeight="43.0" prefWidth="211.0" text="GESTIÓN EMPLEADOS" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnCerrarSesionEmpleado" layoutX="573.0" layoutY="21.0" mnemonicParsing="false" onAction="#cerrarSesionEmpleadoAction" prefHeight="27.0" prefWidth="85.0" text="Cerrar sesión" />
+   </children>
+</AnchorPane>

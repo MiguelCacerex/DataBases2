@@ -15,10 +15,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,4,4</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descripcion" id="30DFA385-56BA-D2AD-605F-B5469442310A">

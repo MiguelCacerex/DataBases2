@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="900.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="tabServiciosAdicionales" text="Gestión de servicio adicional">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9ACD32;">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="900.0" prefWidth="1200.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="14.0" text="INFORMACIÓN SERVICIOS ADICIONALES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="173.0" layoutY="69.0" prefHeight="240.0" prefWidth="286.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="114.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="172.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Nombre:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtNombreServicioAdicional" GridPane.columnIndex="1" />
+                                          <Label text="Precio:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPrecioServicioAdicional" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <GridPane layoutX="599.0" layoutY="68.0" prefHeight="243.0" prefWidth="359.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="144.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="215.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Descripción:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="txtDescripcionServicioAdicional" prefHeight="243.0" prefWidth="212.0" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="351.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnNuevoServicioAdicional" layoutX="316.0" layoutY="365.0" mnemonicParsing="false" onAction="#nuevoServicioAdicionalAction" prefHeight="53.0" prefWidth="138.0" text="NUEVO">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnActualizarServicioAdicional" layoutX="555.0" layoutY="365.0" mnemonicParsing="false" onAction="#actualizarServicioAdicionalAction" prefHeight="53.0" prefWidth="139.0" text="ACTUALIZAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAgregarServicioAdicional" layoutX="795.0" layoutY="365.0" mnemonicParsing="false" onAction="#agregarServicioAdicionalAction" prefHeight="53.0" prefWidth="139.0" text="AGREGAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="19.0" layoutY="49.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Label layoutX="45.0" layoutY="14.0" text="LISTA DE SERVICIOS ADICIONALES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <TableView fx:id="tableServiciosAdicionales" layoutX="45.0" layoutY="74.0" prefHeight="278.0" prefWidth="1103.0">
+                                       <columns>
+                                          <TableColumn fx:id="columCodigoServicioAdicional" prefWidth="195.0" text="Código" />
+                                          <TableColumn fx:id="columNombreServicioAdicional" prefWidth="295.0" text="Nombre" />
+                                          <TableColumn fx:id="columDescripcionServicioAdicional" prefWidth="419.0" text="Descripción" />
+                                          <TableColumn fx:id="columServicioAdicional" prefWidth="193.0" text="Precio" />
+                                       </columns>
+                                    </TableView>
+                                    <Separator layoutX="19.0" layoutY="363.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnEliminarServicioAdicional" layoutX="974.0" layoutY="374.0" mnemonicParsing="false" onAction="#eliminarServicioAdicionalAction" prefHeight="35.0" prefWidth="139.0" text="ELIMINAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab fx:id="tabAutomoviles" text="Gestión de automóviles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9ACD32;">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="900.0" prefWidth="1200.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="14.0" text="INFORMACIÓN AUTOMÓVILES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="50.0" layoutY="68.0" prefHeight="240.0" prefWidth="429.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="241.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="188.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Placa:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Precio renta por día:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Número de puestos:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPlacaAutomovil" GridPane.columnIndex="1" />
+                                          <Label text="Color:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Capacidad de carga (kg):" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtNumPuestosAutomovil" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtPrecioRentaDiaAutomovil" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtColorAutomovil" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                       </children>
+                                    </GridPane>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Separator layoutX="19.0" layoutY="351.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnNuevoAutomovil" layoutX="316.0" layoutY="365.0" mnemonicParsing="false" onAction="#nuevoAutomovilAction" prefHeight="53.0" prefWidth="138.0" text="NUEVO">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnActualizarAutomovil" layoutX="555.0" layoutY="365.0" mnemonicParsing="false" onAction="#actualizarAutomovilAction" prefHeight="53.0" prefWidth="139.0" text="ACTUALIZAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnAgregarAutomovil" layoutX="795.0" layoutY="365.0" mnemonicParsing="false" onAction="#agregarAutomovilAction" prefHeight="53.0" prefWidth="139.0" text="AGREGAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="958.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+                                    <ImageView fx:id="imagenAutomovil" fitHeight="250.0" fitWidth="178.0" layoutX="959.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imagenes/imagenAutomovil.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <GridPane layoutX="527.0" layoutY="68.0" prefHeight="240.0" prefWidth="393.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="211.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="182.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Tipo de combustible:" textFill="WHITE">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Tipo de auto:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtTipoCombustibleAutomovil" GridPane.columnIndex="1" />
+                                          <ComboBox fx:id="comboTipoAutomovil" onAction="#tipoAutomovilAction" prefHeight="25.0" prefWidth="181.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Gama del auto:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Marca del auto:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Estado del auto:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboGamaAutomovil" onAction="#gamaAutomovilAction" prefHeight="25.0" prefWidth="181.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <ComboBox fx:id="comboMarcaAutomovil" onAction="#marcaAutomovilAction" prefHeight="25.0" prefWidth="181.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <ComboBox fx:id="comboEstadoAutomovil" onAction="#estadoAutomovilAction" prefHeight="25.0" prefWidth="181.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane layoutX="19.0" layoutY="49.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #004E64;">
+                                 <children>
+                                    <Separator layoutX="19.0" layoutY="49.0" prefWidth="1160.0" />
+                                    <Label layoutX="45.0" layoutY="14.0" text="LISTA DE AUTOMÓVILES" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <TableView fx:id="tableAutomoviles" layoutX="45.0" layoutY="74.0" prefHeight="278.0" prefWidth="1103.0">
+                                      <columns>
+                                        <TableColumn fx:id="columCodigoAutomovil" prefWidth="65.0" text="Código" />
+                                        <TableColumn fx:id="columPlacaAutomovil" prefWidth="88.0" text="Placa" />
+                                          <TableColumn fx:id="columNumPuestosAutomoviles" prefWidth="115.0" text="Número de puestos" />
+                                          <TableColumn fx:id="columPrecioRentaDiaAutomoviles" prefWidth="124.0" text="Precio renta por día" />
+                                          <TableColumn fx:id="columColorAutomovil" prefWidth="118.0" text="Color" />
+                                          <TableColumn fx:id="columCapacidadAutomovil" prefWidth="88.0" text="Capacidad" />
+                                          <TableColumn fx:id="columTipoAutomovil" prefWidth="123.0" text="Tipo de auto" />
+                                          <TableColumn fx:id="columGamaAutomovil" prefWidth="126.0" text="Gama" />
+                                          <TableColumn fx:id="columMarcaAutomovil" prefWidth="122.0" text="Marca" />
+                                          <TableColumn fx:id="columEstadoAutomovil" prefWidth="133.0" text="Estado" />
+                                      </columns>
+                                    </TableView>
+                                    <Separator layoutX="19.0" layoutY="363.0" prefWidth="1160.0" />
+                                    <Button fx:id="btnEliminarAutomovil" layoutX="974.0" layoutY="374.0" mnemonicParsing="false" onAction="#eliminarAutomovilAction" prefHeight="35.0" prefWidth="139.0" text="ELIMINAR">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

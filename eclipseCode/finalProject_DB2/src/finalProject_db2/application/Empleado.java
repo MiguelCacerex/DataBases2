@@ -3,7 +3,7 @@ package finalProject_db2.application;
 import java.io.*;
 import java.net.*;
 
-public class Cliente {
+public class Empleado {
 
 
 	int puerto;
@@ -17,13 +17,13 @@ public class Cliente {
 	// socket cliente
 	Socket socketComunicacion;
 
-	public Cliente(String host, int puerto) {
+	public Empleado(String host, int puerto) {
 		this.puerto = puerto;
 		this.host = host;
 	}
 
 
-	public void iniciarCliente() {
+	public void iniciarEmpleado() {
 
         String host = "localhost"; // La dirección IP o el nombre de host del servidor
         int puerto = 9999; // El puerto en el que el servidor está escuchando
@@ -37,7 +37,7 @@ public class Cliente {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
 
-            // Enviar usuario y contraseña al servidor
+            // Enviar tarea al sevidor
             out.println("iniciarAplicacion");
 
             // Recibir la respuesta del servidor
@@ -52,7 +52,7 @@ public class Cliente {
     }
 
 
-	public String validarCredenciales(String correoAux, String passwordAux) {
+	public boolean validarCredenciales(String correoAux, String passwordAux) {
 
 		String host = "localhost"; // La dirección IP o el nombre de host del servidor
 	        int puerto = 9999; // El puerto en el que el servidor está escuchando
@@ -76,39 +76,17 @@ public class Cliente {
 
 	            mensaje = respuesta;
 
-	            if(mensaje != null && !mensaje.equals("NoValidado")){
+	            if(mensaje.equals("validado")){
 		            socket.close();
-	            	return mensaje;
+	            	return true;
 	            }else{
 		            socket.close();
-	            	return null;
+	            	return false;
 	            }
 
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
-			return null;
+			return false;
 	}
-
-
-	public String getCodigo() {
-		return codigo;
-	}
-
-
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
-	}
-
-
-	public String getCorreo() {
-		return correo;
-	}
-
-
-	public void setCorreo(String correo) {
-		this.correo = correo;
-	}
-
-
 }
