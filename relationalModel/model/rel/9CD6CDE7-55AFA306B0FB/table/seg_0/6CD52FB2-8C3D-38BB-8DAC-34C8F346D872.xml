@@ -15,10 +15,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,4,4</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="placa" id="F7D55733-428E-717A-C07C-686E686EFCE5">
@@ -40,8 +38,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,3,3</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="precioRentaDia" id="8B955CB5-17B7-CB08-8647-8B9D9B017294">
@@ -52,8 +49,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>8</dataTypeScale>
-<ownDataTypeParameters>,8,8</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="color" id="4CBE94D0-11FA-7246-1D34-1001E3D85608">
@@ -86,8 +82,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,3,3</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="tipoCombustible" id="70C4038A-828F-AF2F-4572-CD20514D759D">
@@ -108,8 +103,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -117,15 +111,14 @@
 <colAssociation fkAssociation="043F4108-CFFD-BB02-EE47-A72101858ACD" referredColumn="C200CA38-C7A8-E428-CD10-2B0B74F162D1"/>
 </associations>
 </Column>
-<Column name="codigo_gamaAuto" id="6FC428E0-13F3-85ED-46F7-54120A0FF54F">
+<Column name="NULL SET GENERATED_555" id="6FC428E0-13F3-85ED-46F7-54120A0FF54F">
 <createdBy>Universidad</createdBy>
 <createdTime>2023-09-15 00:27:06 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -140,9 +133,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -156,8 +148,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
