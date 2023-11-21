@@ -45,7 +45,7 @@ public class LoginViewController {
 
     @FXML
     void entrarAdmin(MouseEvent event) {
-    	//aplicacion.inicioEmplado(empleado);
+     aplicacion.inicioEmpleado(empleado);
     }
 
 	public void setClienteAplicacion(AplicacionCliente mainApplication, Cliente cliente, Empleado empleado) {

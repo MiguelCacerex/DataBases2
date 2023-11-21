@@ -2,6 +2,8 @@ package finalProject_db2.application;
 
 import java.io.IOException;
 import finalProject_db2.controller.LoginViewController;
+import finalProject_db2.controller.LoginViewEmpleadoController;
+import finalProject_db2.controller.SingUpViewEmpleadoController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -62,18 +64,18 @@ public class AplicacionCliente extends Application {
 
 
 
-	/*METODOS PARA MOSTRAR OTRA INTERFACE
-	public void inicioEmplado(Empleado empleado) {
+	//Interfaces del empleado
+
+	public void inicioEmpleado(Empleado empleado) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			//Cambiar por la ruta de tu vista
-			loader.setLocation(AplicacionCliente.class.getResource("../view/loginView.fxml"));
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/loginViewEmpleado.fxml"));
 
 			AnchorPane rootLayout =  loader.load();
 
-			//cambiar por el nombre de tu controlador
-			LoginViewController loginViewController = loader.getController(  );
-			loginViewController.setClienteAplicacion(this,empleado);
+			LoginViewEmpleadoController loginViewEmpleadoController = loader.getController(  );
+			loginViewEmpleadoController.setEmpleadoAplicacion(this,empleado);
 			Scene scene = new Scene(rootLayout);
 			stage.setScene(scene);
 
@@ -83,7 +85,31 @@ public class AplicacionCliente extends Application {
 			e.printStackTrace();
 		}
 	}
-	*/
+
+
+	public void registroEmpleado(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/SingUp.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			SingUpViewEmpleadoController SingUpViewEmpleadoController = loader.getController(  );
+			SingUpViewEmpleadoController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+
+
 
 }
 

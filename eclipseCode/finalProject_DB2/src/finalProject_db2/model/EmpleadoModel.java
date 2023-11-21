@@ -1,24 +1,25 @@
 package finalProject_db2.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
-public class Empleado {
+public class EmpleadoModel {
     private int codigo;
     private String nombre;
     private String correo;
     private String password;
     private String telefono;
-    private char estadoCivil;
+    private String estadoCivil;
     private String direccion;
-    private Date fechaNacimiento;
+    private LocalDate fechaNacimiento;
     private int codigoTipoEmpleado;
 
-    public Empleado() {
+    public EmpleadoModel() {
 		super();
 	}
 
-	public Empleado(int codigo, String nombre, String correo, String password, String telefono, char estadoCivil,
-			String direccion, Date fechaNacimiento, int codigoTipoEmpleado) {
+	public EmpleadoModel(int codigo, String nombre, String correo, String password, String telefono, String estadoCivil,
+			String direccion, LocalDate fechaNacimiento, int codigoTipoEmpleado) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -71,11 +72,11 @@ public class Empleado {
 		this.telefono = telefono;
 	}
 
-	public char getEstadoCivil() {
+	public String getEstadoCivil() {
 		return estadoCivil;
 	}
 
-	public void setEstadoCivil(char estadoCivil) {
+	public void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
 
@@ -87,11 +88,11 @@ public class Empleado {
 		this.direccion = direccion;
 	}
 
-	public Date getFechaNacimiento() {
+	public LocalDate getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
-	public void setFechaNacimiento(Date fechaNacimiento) {
+	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 

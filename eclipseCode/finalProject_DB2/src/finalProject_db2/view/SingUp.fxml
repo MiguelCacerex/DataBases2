@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: ffffff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="finalProject_db2.controller.SingUpViewEmpleadoController">
+	   <children>
+      <SplitPane dividerPositions="0.528940338379341" prefHeight="700.0" prefWidth="900.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text layoutX="46.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="250.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="47.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="249.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="246.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado civil:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="250.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="46.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Nacimiento:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtNombre" layoutX="44.0" layoutY="229.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu nombre" />
+                  <Text fill="#25a18e" layoutX="165.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear Cuenta" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="boxEstadoCivil" layoutX="47.0" layoutY="486.0" onAction="#estadoCivilAction" prefHeight="36.0" prefWidth="176.0" />
+                  <DatePicker fx:id="dateFechaNacimiento" layoutX="44.0" layoutY="313.0" prefHeight="36.0" prefWidth="176.0" promptText="Selecciona una fecha" />
+                  <TextField fx:id="txtTelefono" layoutX="248.0" layoutY="229.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu teléfono" />
+                  <TextField fx:id="txtCedula" layoutX="248.0" layoutY="313.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu nombre" />
+                  <TextField fx:id="txtCorreo" layoutX="44.0" layoutY="399.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu nombre" />
+                  <TextField fx:id="txtPassword" layoutX="248.0" layoutY="399.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu nombre" />
+                  <TextField fx:id="txtDireccion" layoutX="248.0" layoutY="484.0" minHeight="36.0" prefHeight="36.0" prefWidth="176.0" promptText="Ingresa tu nombre" />
+                  <Button fx:id="btnCrearCuenta" layoutX="248.0" layoutY="638.0" mnemonicParsing="false" onAction="#btnCrearCuentaAction" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #25A18E; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #ffffff;" text="Crear Cuenta" textFill="#25a18e">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnVolver" layoutX="29.0" layoutY="638.0" mnemonicParsing="false" onAction="#btnVolverAction" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #ffffff;" text="Volver" textFill="#25a18e">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="20.0" layoutY="171.0" prefHeight="0.0" prefWidth="430.0" />
+                  <Separator layoutX="20.0" layoutY="616.0" prefHeight="0.0" prefWidth="430.0" />
+                  <ImageView fitHeight="143.0" fitWidth="158.0" layoutX="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logoHospedar.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="50.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargo:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="boxTipoEmpleado" layoutX="47.0" layoutY="569.0" onAction="#tipoEmpleadoAction" prefHeight="36.0" prefWidth="176.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="709.0" fitWidth="699.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fondoLogin.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
