@@ -5,7 +5,11 @@ import java.io.IOException;
 
 import javax.management.Notification;
 import finalProject_db2.controller.AdministradorViewController;
-
+import finalProject_db2.controller.GestionArticuloViewController;
+import finalProject_db2.controller.GestionEmpleadoViewController;
+import finalProject_db2.controller.GestionInfraestructuraViewController;
+import finalProject_db2.controller.GestionPaqueteViewController;
+import finalProject_db2.controller.GestionServicioAdicionalViewController;
 import finalProject_db2.controller.HomeClienteViewController;
 import finalProject_db2.controller.LoginViewController;
 
@@ -20,7 +24,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class AplicacionCliente extends Notification {
+public class AplicacionCliente extends Application {
 
 	// Atributos de la clase Aplicacion
 
@@ -177,6 +181,110 @@ public class AplicacionCliente extends Notification {
 		}
 	}
 
+
+	public void gestionarArticuloAdministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/GestionArticuloView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			GestionArticuloViewController GestionArticuloViewController  = loader.getController(  );
+			GestionArticuloViewController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void gestionarEmpleadoAdministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/GestionEmpleadoView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			GestionEmpleadoViewController GestionEmpleadoViewController  = loader.getController(  );
+			GestionEmpleadoViewController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+	public void gestionarInfraestructuraAdministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/GestionInfraestructuraView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			GestionInfraestructuraViewController GestionInfraestructuraViewController  = loader.getController(  );
+			GestionInfraestructuraViewController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+	public void gestionarPaqueteAdministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/GestionPaqueteView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			GestionPaqueteViewController GestionPaqueteViewController  = loader.getController(  );
+			GestionPaqueteViewController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+
+	public void gestionarServicioAdicionaldministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/GestionServicioAdicionalView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			GestionServicioAdicionalViewController GestionServicioAdicionalViewController  = loader.getController(  );
+			GestionServicioAdicionalViewController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 
 

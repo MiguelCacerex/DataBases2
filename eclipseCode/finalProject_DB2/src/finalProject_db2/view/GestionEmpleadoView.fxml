@@ -95,7 +95,7 @@
                                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="958.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
                                     <ImageView fx:id="imagenEmpleado" fitHeight="250.0" fitWidth="178.0" layoutX="962.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../imagenes/imagenEmpleado.jpg" />
+                                          <Image url="@../images/perfil.jpg" />
                                        </image>
                                     </ImageView>
                                     <GridPane layoutX="527.0" layoutY="68.0" prefHeight="240.0" prefWidth="393.0">

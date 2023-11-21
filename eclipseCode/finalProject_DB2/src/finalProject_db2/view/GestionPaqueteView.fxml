@@ -88,7 +88,7 @@
                                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a5cf" height="261.0" layoutX="958.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
                                     <ImageView fx:id="imagenPaquete" fitHeight="250.0" fitWidth="178.0" layoutX="959.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../imagenes/imagenPaquete.jpg" />
+                                          <Image url="@../images/imagenPaquete.jpg" />
                                        </image>
                                     </ImageView>
                                     <GridPane layoutX="527.0" layoutY="68.0" prefHeight="240.0" prefWidth="364.0">

@@ -64,7 +64,7 @@ public class AdministradorViewController {
 
     @FXML
     void cerrarSesionEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.inicioEmpleado(empleado);
     }
 
     @FXML
@@ -74,27 +74,27 @@ public class AdministradorViewController {
 
     @FXML
     void gestionarArticuloEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.gestionarArticuloAdministrador(empleado);
     }
 
     @FXML
     void gestionarEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.gestionarEmpleadoAdministrador(empleado);
     }
 
     @FXML
     void gestionarInfraestructuraEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.gestionarInfraestructuraAdministrador(empleado);
     }
 
     @FXML
     void gestionarPaqueteEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.gestionarPaqueteAdministrador(empleado);
     }
 
     @FXML
     void gestionarServicioAdicionalEmpleadoAction(ActionEvent event) {
-
+    	aplicacion.gestionarServicioAdicionaldministrador(empleado);
     }
 
 
