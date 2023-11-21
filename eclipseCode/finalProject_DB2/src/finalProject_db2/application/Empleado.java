@@ -163,6 +163,7 @@ public class Empleado {
 			String respuesta = in.readLine();
 
 			mensaje = respuesta;
+			System.out.println(mensaje);
 
 
 			if (mensaje != null && !mensaje.equals("Empleados NO encontrados")) {

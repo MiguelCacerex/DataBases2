@@ -48,7 +48,7 @@ public class HiloEmpleadoServidor extends Thread {
 				String datos = consultarEmpleados(correo, contrasenia);
 
 				if (datos != null) {
-					enviarMensaje("valido");
+					enviarMensaje(datos);
 				} else {
 					enviarMensaje("NoValidado");
 				}
@@ -196,61 +196,40 @@ public class HiloEmpleadoServidor extends Thread {
 
         try {
             // Llamar a la función utilizando un CallableStatement
-            retornoConexion = conexion.prepareCall("{? = call obtener_todos_los_empleados}");
+            retornoConexion = conexion.prepareCall("{? = call obtener_empleados}");
 
             // Configurar el parámetro de salida de la función
-            retornoConexion.registerOutParameter(1, OracleTypes.CURSOR);
+            retornoConexion.registerOutParameter(1, OracleTypes.VARCHAR);
 
             // Ejecutar la llamada a la función
             retornoConexion.execute();
 
-            // Obtener el resultado como un conjunto de resultados
-            ResultSet resultSet = (ResultSet) retornoConexion.getObject(1);
+	        // Obtener el resultado como un número
+	        return retornoConexion.getString(1);
 
-            // Construir un StringBuilder para concatenar nombres de empleados
-            StringBuilder nombresConcatenados = new StringBuilder();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        // Cerrar los recursos en un bloque finally para asegurar su liberación
+	        try {
+	            if (retornoConexion != null) {
+	                retornoConexion.close();
+	            }
+	            if (conexion != null) {
+	                conexion.close();
+	            }
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    return null; // Manejo de errores, devolver un valor predeterminado
+	}
 
-            // Iterar sobre los resultados y concatenar nombres
-            while (resultSet.next()) {
-                String nombre = resultSet.getString("nombre");
-                // Puedes obtener otros campos según sea necesario
-
-                // Agregar el nombre al StringBuilder
-                nombresConcatenados.append(nombre).append(", ");
-            }
-
-            // Eliminar la coma adicional al final y devolver el resultado
-            return nombresConcatenados.length() > 0
-                    ? nombresConcatenados.substring(0, nombresConcatenados.length() - 2)
-                    : "";
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            // Cerrar los recursos en un bloque finally para asegurar su liberación
-            try {
-                if (retornoConexion != null) {
-                    retornoConexion.close();
-                }
-                if (conexion != null) {
-                    conexion.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        return ""; // Manejo de errores, devolver una cadena vacía o algún valor predeterminado
-    }
 
 	private void enviarMensaje(String mensaje) {
 		flujoSalidaComunicacion.println(mensaje);
 	}
 
-
-	private void enviarMensajeResultSet(ResultSet mensaje1) {
-		// TODO Auto-generated method stub
-
-	}
 
 
 }

@@ -52,8 +52,6 @@ public class SingUpViewEmpleadoController {
 
 	private AplicacionCliente aplicacion;
 
-	private Cliente cliente;
-
 	private Empleado empleado;
 
 	Object estadoCivilSeleccionado;
@@ -67,12 +65,16 @@ public class SingUpViewEmpleadoController {
 	    	boxTipoEmpleado.setItems(tipoEmpleados);
 
 
-	    	//IniciarComboEstadosCiviles
-	    	 String nombresEmpleados = empleado.obtenerEmpleados();
+	    	String nombresEmpleados = empleado.obtenerEmpleados();
 
-	         // Configurar el ComboBox con los nombres de empleados
-	         boxEstadoCivil.getItems().add(nombresEmpleados);
-	         boxEstadoCivil.setValue(nombresEmpleados);
+	        // Configurar el ComboBox con los nombres de empleados
+	        boxEstadoCivil.getItems().add(nombresEmpleados);
+	        boxEstadoCivil.setValue(nombresEmpleados);
+
+
+
+
+
 	    }
 
     @FXML
@@ -125,9 +127,13 @@ public class SingUpViewEmpleadoController {
 
     @FXML
     void estadoCivilAction(ActionEvent event) {
+    	String nombresEmpleados = empleado.obtenerEmpleados();
+
+        // Configurar el ComboBox con los nombres de empleados
+        boxEstadoCivil.getItems().add(nombresEmpleados);
+        boxEstadoCivil.setValue(nombresEmpleados);
 
 
-    	 estadoCivilSeleccionado = boxEstadoCivil.getValue();
     }
 
     @FXML
