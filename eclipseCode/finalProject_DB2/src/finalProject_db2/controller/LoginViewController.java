@@ -30,17 +30,20 @@ public class LoginViewController {
     @FXML
     private PasswordField txtPassword;
 
-
 	private AplicacionCliente aplicacion;
 
 	private Cliente cliente;
 
 	private Empleado empleado;
 
-
     @FXML
     void initialize() {
 
+    }
+
+    @FXML
+    void abrirSingUpView(MouseEvent event) {
+    	aplicacion.showSignUp(cliente);
     }
 
     @FXML
@@ -68,10 +71,9 @@ public class LoginViewController {
 	    boolean credencialesValidas = validarCredenciales(correo, password);
 
 	    if (credencialesValidas) {
-
-	        mostrarAlerta("Inicio de sesión exitoso", "¡Bienvenido!" + correo);
+	        mostrarAlerta("Inicio de sesión exitoso", "¡Bienvenido de nuevo!");
+	        aplicacion.showHomeCliente(cliente);
 	    } else {
-	        // Si las credenciales son inválidas, muestra un mensaje de error
 	        mostrarAlerta("Error de inicio de sesión", "Correo o contraseña incorrectos.");
 	    }
 	}
@@ -92,7 +94,6 @@ public class LoginViewController {
 		}else{
 			return false;
 		}
-
 	}
 
 	// Método para mostrar una alerta

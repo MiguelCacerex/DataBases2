@@ -1,7 +1,10 @@
 package finalProject_db2.application;
 
 import java.io.IOException;
+
+import finalProject_db2.controller.HomeClienteViewController;
 import finalProject_db2.controller.LoginViewController;
+import finalProject_db2.controller.SingUpViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -49,6 +52,44 @@ public class AplicacionCliente extends Application {
 
 			LoginViewController loginViewController = loader.getController();
 			loginViewController.setClienteAplicacion(this,cliente,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void showSignUp(Cliente cliente) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(AplicacionCliente.class.getResource("../view/SignUpView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			SingUpViewController signUpViewController = loader.getController();
+			signUpViewController.setClienteAplicacion(this,cliente);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void showHomeCliente(Cliente cliente) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(AplicacionCliente.class.getResource("../view/HomeClienteView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			HomeClienteViewController homeClienteViewController = loader.getController();
+			homeClienteViewController.setClienteAplicacion(this,cliente);
 			Scene scene = new Scene(rootLayout);
 			stage.setScene(scene);
 

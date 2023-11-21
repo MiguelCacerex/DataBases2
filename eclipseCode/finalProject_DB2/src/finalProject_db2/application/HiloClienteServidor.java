@@ -1,12 +1,10 @@
 package finalProject_db2.application;
 
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import finalProject_db2.connection.Conexion;
@@ -68,28 +66,44 @@ public class HiloClienteServidor extends Thread {
 
 	private String consultarUser(String correo, String contrasenia) {
 
-		String consultaSQL = "SELECT * FROM cliente WHERE correo = '"+correo+"' AND password = '"+contrasenia+"'";
-		PreparedStatement consulta = null;
-	    ResultSet resultadoConsulta = null;
 	    Connection conexion = Conexion.getConnection();
+        CallableStatement retornoConexion = null;
 
 		try {
-			consulta = conexion.prepareStatement(consultaSQL);
-			resultadoConsulta = consulta.executeQuery();
+			 // Llamar a la función utilizando un CallableStatement
+			retornoConexion = conexion.prepareCall("{? = call validar_credenciales(?, ?}");
 
-			while (resultadoConsulta.next()) {
-				String codigo = resultadoConsulta.getString("cedula");
-				String email = resultadoConsulta.getString("correo");
+            // Configurar los parámetros de entrada y salida de la función
+			retornoConexion.registerOutParameter(1, java.sql.Types.VARCHAR);
+			retornoConexion.setString(2, correo);
+			retornoConexion.setString(3, contrasenia);
 
-			    String datos = codigo+","+email;
+            // Ejecutar la llamada a la función
+			retornoConexion.execute();
 
-			    return datos;
-            }
+			String resultado = retornoConexion.getString(1);
+
+			if(resultado != null){
+				return resultado;
+			}
 
 			return null;
+
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
+		}finally {
+            // Cerrar los recursos en un bloque finally para asegurar su liberación
+            try {
+                if (retornoConexion != null) {
+                	retornoConexion.close();
+                }
+                if (conexion != null) {
+                	conexion.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
 		return null;
 	}
 
