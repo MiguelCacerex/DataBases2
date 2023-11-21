@@ -2,6 +2,8 @@ package finalProject_db2.application;
 
 import java.io.IOException;
 
+import javax.management.Notification;
+
 import finalProject_db2.controller.HomeClienteViewController;
 import finalProject_db2.controller.LoginViewController;
 
@@ -16,7 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class AplicacionCliente extends Application {
+public class AplicacionCliente extends Notification {
 
 	// Atributos de la clase Aplicacion
 
