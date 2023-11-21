@@ -14,7 +14,7 @@
 
 <AnchorPane minHeight="500.0" minWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalProject_db2.controller.LoginViewController">
    <children>
-      <SplitPane dividerPositions="0.46993127147766317" prefHeight="500.0" prefWidth="700.0">
+      <SplitPane dividerPositions="0.4914089347079037" prefHeight="500.0" prefWidth="700.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;">
                <children>
@@ -41,13 +41,13 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Button>
-                  <Text fx:id="linkResgistrate" fill="#25a18e" layoutX="63.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿No tienes cuenta? Registrate Aqui" underline="true" />
+                  <Text fx:id="linkResgistrate" fill="#25a18e" layoutX="54.0" layoutY="376.0" onMouseClicked="#abrirSingUpView" strokeType="OUTSIDE" strokeWidth="0.0" text="¿No tienes cuenta? Registrate Aqui" underline="true" />
                   <ImageView fitHeight="172.0" fitWidth="154.0" layoutX="86.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/logoHospedar.png" />
                      </image>
                   </ImageView>
-                  <Text fx:id="linkEmpleado" fill="#25a18e" layoutX="77.0" layoutY="401.0" onMouseClicked="#entrarAdmin" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Eres empleado? Entra Aqui" underline="true" />
+                  <Text fx:id="linkEmpleado" fill="#25a18e" layoutX="71.0" layoutY="401.0" onMouseClicked="#entrarAdmin" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Eres empleado? Entra Aqui" underline="true" />
                   <PasswordField fx:id="txtPassword" layoutX="24.0" layoutY="304.0" prefHeight="36.0" prefWidth="284.0" promptText="Ingrese su contraseña" />
                </children>
             </AnchorPane>
