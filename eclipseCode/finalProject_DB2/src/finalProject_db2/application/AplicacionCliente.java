@@ -2,6 +2,7 @@ package finalProject_db2.application;
 
 import java.io.IOException;
 
+import finalProject_db2.controller.AdministradorViewController;
 import finalProject_db2.controller.HomeClienteViewController;
 import finalProject_db2.controller.LoginViewController;
 
@@ -141,6 +142,28 @@ public class AplicacionCliente extends Application {
 
 			SingUpViewEmpleadoController SingUpViewEmpleadoController = loader.getController(  );
 			SingUpViewEmpleadoController.setEmpleadoAplicacion(this,empleado);
+			Scene scene = new Scene(rootLayout);
+			stage.setScene(scene);
+
+			stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+
+
+	public void cargarInicioAdministrador(Empleado empleado) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(AplicacionCliente.class.getResource("../view/AdministradorView.fxml"));
+
+			AnchorPane rootLayout =  loader.load();
+
+			AdministradorViewController AdministradorViewController = loader.getController(  );
+			AdministradorViewController.setEmpleadoAplicacion(this,empleado);
 			Scene scene = new Scene(rootLayout);
 			stage.setScene(scene);
 

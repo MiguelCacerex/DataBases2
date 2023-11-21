@@ -61,6 +61,7 @@ public class LoginViewEmpleadoController {
  	    if (credencialesValidas) {
 
  	        mostrarAlerta("Inicio de sesión exitoso", "¡Bienvenido!" + correo);
+ 	        aplicacion.cargarInicioAdministrador(empleado);
  	    } else {
  	        // Si las credenciales son inválidas, muestra un mensaje de error
  	        mostrarAlerta("Error de inicio de sesión", "Correo o contraseña incorrectos.");
@@ -75,6 +76,10 @@ public class LoginViewEmpleadoController {
  		if(respuesta != null){
 
  			String respuestaAux[] = respuesta.split(",");
+
+ 			System.out.println(respuestaAux[0]);
+ 			System.out.println(respuestaAux[1]);
+
 
  			empleado.setCorreo(respuestaAux[0]);
  			empleado.setPassword(respuestaAux[1]);
